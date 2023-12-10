@@ -1,0 +1,156 @@
+@charset "UTF-8";
+
+:root {
+    --cor1: #0583F2;
+    --cor2: #056CF2;
+    --cor3: #023859;
+    --cor4: #1F212D;
+    --cor-de-fundo: #131418;
+    --cor-do-texto: white;
+    --fonte-principal: 'Poppins', sans-serif;
+}
+
+:root.tema-claro {
+    --cor1: #0583F2;
+    --cor2: #056CF2;
+    --cor3: #023859;
+    --cor4: #1F212D;
+    --cor-de-fundo: #ffffff;
+    --cor-do-texto: black;
+    --fonte-principal: 'Poppins', sans-serif;
+}
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 991px) {
+    .header {
+        padding: 2rem 4%;
+    }
+
+    section {
+        padding: 10rem 4% 2rem;
+    }
+
+    .home {
+        padding: 0 4%;
+    }
+
+    .footer {
+        padding: 2rem 4%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    #foto-principal {
+        width: 0;
+        height: 0;
+    }
+
+    .header {
+        background-color: var(--cor-de-fundo);
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        width: 100%;
+        padding: 1rem 4%;
+        background: var(--cor2);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        transition: 0.3s ease;
+        transition-delay: 0.3s;
+    }
+
+    .navbar.ativo {
+        left: 0;
+        transition-delay: 0s;
+    }
+
+    .navbar > .navbar-ativa {
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: var(--cor-de-fundo);
+        border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+        z-index: -1;
+        transition: 0.2s ease;
+        transition-delay: 0s;
+    }
+
+    .navbar.ativo .navbar-ativa {
+        transition-delay: 0.2s;
+        left: 0;
+    }
+
+    .navbar > a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+        transform: translateX(-20rem);
+        transition: 0.2 ease;
+        transition-delay: 0s;
+    }
+
+    .navbar.ativo a {
+        transform: translateX(0);
+        transition-delay: 0.25s;
+    }
+}
+
+@media (max-width: 520px) {
+
+    html {
+        font-size: 50%;
+
+    }
+
+    .home-cont {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 462px) {
+    .home-cont {
+        font-size: 5.2rem;
+    }
+
+    .footer {
+        flex-direction: column-reverse;
+    }
+
+    .footer p {
+        margin-top: 2rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 371px) {
+    .home {
+        justify-content: center;
+    }
+
+    .home-cont {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-content h1 {
+        font-size: 5rem;
+    }
+}

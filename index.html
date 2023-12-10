@@ -6,6 +6,7 @@
     <title>Portfólio</title>
     <link rel="stylesheet" href="estilos/style-home.css">
     <link rel="stylesheet" href="estilos/style-sec2.css">
+    <link rel="stylesheet" href="estilos/style-resp.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
@@ -14,17 +15,24 @@
 
 <body>
     <header class="header">
-        <button id="btn-hamb" onclick="sidebar()">
+        <!-- <button id="btn-hamb" onclick="sidebar()">
             <span class="linha"></span>
             <span class="linha"></span>
             <span class="linha"></span>
-        </button>
+        </button> -->
+
+        <a class="logo" href="#">Venny.</a>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+
         <nav class="navbar">
             <a href="#home" class="ativo">Home</a>
             <a href="#sobre">Sobre</a>
             <a href="#skills">Skills</a>
             <a href="#projetos">Projetos</a>
-            <a href="#contato" id="btn-contato">Contato</a>
+            <a href="#contato" class="btn-contato">Contato</a>
+
+            <span class="navbar-ativa"></span>
         </nav>
     </header>
 
@@ -95,6 +103,11 @@
                                 <h3>Type Script <span>10%</span></h3>
                                 <div class="bar"><span></span></div>
                             </div>
+
+                            <div class="progress">
+                                <h3>Type Script <span>10%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -123,6 +136,12 @@
                                 <h3>SEO Marketing <span>10%</span></h3>
                                 <div class="bar"><span></span></div>
                             </div>
+
+                            <div class="progress">
+                                <h3>SEO Marketing <span>10%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+
                         </div>
                     </div>
                 </div>

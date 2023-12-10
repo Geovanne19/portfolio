@@ -64,6 +64,12 @@ header.sticky {
     transition: 1s;
 }
 
+.logo {
+    font-size: 2.5rem;
+    color: var(--cor-do-texto);
+    font-weight: 600;
+}
+
 .header > #btn-hamb {
     width: 40px;
     height: 40px; 
@@ -83,7 +89,7 @@ header.sticky {
     transition: 0.3s;
 }
 
-#btn-hamb.ativar .linha:nth-child(1) {
+/* #btn-hamb.ativar .linha:nth-child(1) {
     transform: translateY(7px) rotate(-45deg);
     background-color: var(--cor2);
 }
@@ -96,16 +102,16 @@ header.sticky {
 #btn-hamb.ativar .linha:nth-child(2) {
     width: 0;
     background-color: var(--cor2);
-}
+} */
 
-#btn-contato {
+.btn-contato {
     background-color: #056CF2;
     border-radius: 10px;
     box-shadow: 0px 0px 15px #056cf252;
     padding: 10px;
 }
 
-#btn-contato:hover {
+.btn-contato:hover {
     color: var(--cor-de-fundo);
     padding: 12px;
 }
@@ -121,6 +127,13 @@ header.sticky {
 .navbar a:hover,
 .navbar a.ativo {
     color: #0583F2;
+}
+
+#menu-icon {
+    font-size: 3.6rem;
+    color: var(--cor-do-texto);
+    cursor: pointer;
+    display: none;
 }
 
 section {
