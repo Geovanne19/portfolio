@@ -23,7 +23,7 @@
     --fonte-principal: 'Poppins', sans-serif;
 }
 
-.sec2 {
+.sobre-container {
     background-image: linear-gradient(to top, black, var(--cor2));
     display: flex;
 }
