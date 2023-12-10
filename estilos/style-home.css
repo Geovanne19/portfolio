@@ -58,6 +58,12 @@ body {
     z-index: 100;
 }
 
+header.sticky {
+    background-color: var(--cor-de-fundo);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.377);
+    transition: 1s;
+}
+
 .header > #btn-hamb {
     width: 40px;
     height: 40px; 
@@ -130,6 +136,7 @@ section {
 
 .home-cont {
     max-width: 61rem;
+    margin-right: 5%;
 }
 
 .home-cont > h1 {
@@ -224,7 +231,6 @@ section {
 #foto-principal {
     max-width: 450px;
     max-height: 450px;
-    overflow: visible;
 }
 
 #sidebar {
