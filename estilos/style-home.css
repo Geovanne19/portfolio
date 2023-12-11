@@ -141,10 +141,20 @@ section {
     padding: 8rem 9% 2rem;
 }
 
+.container {
+    min-height: 100vh;
+    padding: 7rem 9% 2rem;
+}
+
 .home {
     display: flex;
     align-items: center;
     padding: 0 9%;
+}
+
+#home {
+    min-height: 100vh;
+    padding: 8rem 9% 2rem;
 }
 
 .home-cont {
@@ -242,8 +252,14 @@ section {
 }
 
 #foto-principal {
-    max-width: 450px;
-    max-height: 450px;
+    min-width: 450px;
+    min-height: 450px;
+}
+
+.foto-principal-resp {
+    width: 0;
+    height: 0;
+    position:absolute;
 }
 
 #sidebar {

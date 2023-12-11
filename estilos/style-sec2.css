@@ -35,6 +35,7 @@
     flex-direction: column;
     gap: 2rem;
     background-color: var(--cor-de-fundo);
+    padding-top: 5rem;
     padding-bottom: 6rem;
     border-radius: 30px;
 }
@@ -42,6 +43,11 @@
 .titulo {
     font-size: 5rem;
     text-align: center;
+}
+
+.titulo > h3 {
+    padding: 0;
+    margin: 0;
 }
 
 .img-sobre {
@@ -82,11 +88,11 @@ span {
     text-align: center;
 }
 
-.cont-sobre>h3 {
+.cont-sobre > h3 {
     font-size: 1.9rem;
 }
 
-.cont-sobre>p {
+.cont-sobre > p {
     font-size: 1.4rem;
     margin: 2rem 0 3rem;
 }
@@ -105,6 +111,7 @@ btn-box.btns a::before {
 }
 
 .skills{
+    padding-top: 5rem;
     background-color: var(--cor-de-fundo);
     border-radius: 30px;
     min-height: auto;
@@ -228,7 +235,6 @@ btn-box.btns a::before {
     flex-wrap: wrap;
     padding: 2rem 9%;
     background-color: var(--cor-de-fundo);
-
 }
 
 .footer-text {
