@@ -9,6 +9,7 @@
     --cor3: #023859;
     --cor4: #1F212D;
     --cor-de-fundo: #131418;
+    --cor-de-fundo-2: black;
     --cor-do-texto: white;
     --fonte-principal:'Poppins', sans-serif;
 }
@@ -19,6 +20,7 @@
     --cor3: #023859;
     --cor4: #1F212D;
     --cor-de-fundo: #ffffff;
+    --cor-de-fundo-2: rgb(187, 187, 187);
     --cor-do-texto: black;
     --fonte-principal: 'Poppins', sans-serif;
 }
@@ -70,7 +72,7 @@ header.sticky {
     font-weight: 600;
 }
 
-.header > #btn-hamb {
+/* .header > #btn-hamb {
     width: 40px;
     height: 40px; 
     background-color: transparent;
@@ -87,7 +89,7 @@ header.sticky {
     position: relative;
     transform-origin: center;
     transition: 0.3s;
-}
+} */
 
 /* #btn-hamb.ativar .linha:nth-child(1) {
     transform: translateY(7px) rotate(-45deg);
@@ -111,12 +113,20 @@ header.sticky {
     padding: 10px;
 }
 
+.btn-contato {
+    font-size: 1.7rem;
+    color: white;
+    font-weight: 500;
+    margin-left: 3.5rem;
+    transition: 0.3s;
+}
+
 .btn-contato:hover {
     color: var(--cor-de-fundo);
     padding: 12px;
 }
 
-.navbar > a {
+.navbar > a:not(.btn-contato){
     font-size: 1.7rem;
     color: var(--cor-do-texto);
     font-weight: 500;
@@ -124,8 +134,10 @@ header.sticky {
     transition: 0.3s;
 }
 
-.navbar a:hover,
-.navbar a.ativo {
+
+
+.navbar a:hover:not(.btn-contato),
+.navbar a.ativo:not(.btn-contato) {
     color: #0583F2;
 }
 

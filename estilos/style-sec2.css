@@ -9,6 +9,7 @@
     --cor3: #023859;
     --cor4: #1F212D;
     --cor-de-fundo: #131418;
+    --cor-de-fundo-2: black;
     --cor-do-texto: white;
     --fonte-principal: 'Poppins', sans-serif;
 }
@@ -19,12 +20,13 @@
     --cor3: #023859;
     --cor4: #1F212D;
     --cor-de-fundo: #ffffff;
+    --cor-de-fundo-2: rgb(231, 231, 231);
     --cor-do-texto: black;
     --fonte-principal: 'Poppins', sans-serif;
 }
 
 .sobre-container {
-    background-image: linear-gradient(to top, black, var(--cor2));
+    background-image: linear-gradient(to top, var(--cor-de-fundo-2), var(--cor2));
     display: flex;
 }
 
@@ -107,7 +109,7 @@ btn-box.btns a::before {
 }
 
 .skills-container {
-    background-color: black;
+    background-color: var(--cor-de-fundo-2);
 }
 
 .skills{
@@ -149,7 +151,7 @@ btn-box.btns a::before {
     left: 0;
     width: 0%;
     height: 100%;
-    background: black;
+    background: var(--cor-de-fundo-2);
     z-index: -1;
     transition: 0.5s;
 }
@@ -220,7 +222,7 @@ btn-box.btns a::before {
 
 
 .contato-container {
-    background-color: black;
+    background-color: var(--cor-de-fundo-2);
 }
 
 .contato {

@@ -18,12 +18,10 @@
 
 let menuIcon = document.querySelector('#menu-icon')
 let navbar = document.querySelector('.navbar')
-let btnContato = document.querySelector('.btn-contato')
 
 menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x')
     navbar.classList.toggle('ativo')
-    navbar.classList.toggle('btn-contato')
 }
 
 function alternarTema() {
@@ -56,5 +54,4 @@ window.onscroll = () => {
 
     menuIcon.classList.remove('bx-x')
     navbar.classList.remove('ativo')
-    navbar.classList.remove('btn-contato')
 }
