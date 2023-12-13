@@ -43,13 +43,22 @@
 }
 
 .titulo {
+    position: relative;
+    display: inline-block;
     font-size: 5rem;
+    margin-bottom: 3rem;
     text-align: center;
 }
 
-.titulo > h3 {
-    padding: 0;
-    margin: 0;
+.animado.scroll {
+    transition: 1s ease;
+    transition-delay: calc(0.3s / var(--i));
+    animation: none;
+}
+
+.sobre.show-animate .animado.scroll {
+    transition-delay: calc(0.3s * var(--i));
+    width: 0;
 }
 
 .img-sobre {
@@ -91,10 +100,13 @@ span {
 }
 
 .cont-sobre > h3 {
-    font-size: 1.9rem;
+    position: relative;
+    font-size: 2.5rem;
+    display: inline-block;
 }
 
 .cont-sobre > p {
+    position: relative;
     font-size: 1.4rem;
     margin: 2rem 0 3rem;
 }
@@ -120,6 +132,12 @@ btn-box.btns a::before {
     padding-bottom: 7rem;
 }
 
+.skills > h2 {
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .skills > .skills-row {
     display: flex;
     flex-wrap: wrap;
@@ -131,8 +149,14 @@ btn-box.btns a::before {
 }
 
 .skills-column > .title {
+    position: relative;
+    display: inline-block;
     font-size: 2.5rem;
     margin: 0 0 1.5rem;
+}
+
+.skills-column .skills-box {
+    position: relative;
 }
 
 .skills-box > .skills-content {
@@ -218,6 +242,11 @@ btn-box.btns a::before {
 
 .skills-column:nth-child(2) .skills-content>.progress:nth-child(4)>.bar span {
     width: 10%;
+}
+
+.skills.show-animate .animado.scroll {
+    transition-delay: calc(0.3s * var--i);
+    width: 0;
 }
 
 
