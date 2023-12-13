@@ -46,6 +46,9 @@ window.onscroll = () => {
                 links.classList.remove('ativo')
                 document.querySelector('header nav a[href*=' + id + ']').classList.add('ativo')
             })
+            sec.classList.add('show-animate')
+        } else {
+            sec.classList.remove('show-animate')
         }
     })
 
