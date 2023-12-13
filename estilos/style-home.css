@@ -34,7 +34,7 @@
     outline: none;
     scroll-behavior: smooth;
     font-family: var(--fonte-principal);
-    border: px solid red;
+    border: 0px solid red;
 }
 
 html {
@@ -77,40 +77,6 @@ header.sticky {
     position: relative;
 }
 
-/* .header > #btn-hamb {
-    width: 40px;
-    height: 40px; 
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    z-index: 6;
-}
-.header > #btn-hamb > .linha {
-    width: 70%;
-    height: 1.7px;
-    background-color: var(--cor-do-texto);
-    display: block;
-    margin: 5px auto;
-    position: relative;
-    transform-origin: center;
-    transition: 0.3s;
-} */
-
-/* #btn-hamb.ativar .linha:nth-child(1) {
-    transform: translateY(7px) rotate(-45deg);
-    background-color: var(--cor2);
-}
-
-#btn-hamb.ativar .linha:nth-child(3) {
-    transform: translateY(-7px) rotate(45deg);
-    background-color: var(--cor2);
-}
-
-#btn-hamb.ativar .linha:nth-child(2) {
-    width: 0;
-    background-color: var(--cor2);
-} */
-
 .btn-contato {
     background-color: #056CF2;
     border-radius: 10px;
@@ -138,8 +104,6 @@ header.sticky {
     margin-left: 3.5rem;
     transition: 0.3s;
 }
-
-
 
 .navbar a:hover:not(.btn-contato),
 .navbar a.ativo:not(.btn-contato) {
@@ -183,7 +147,7 @@ section {
 .home-cont > h1 {
     position: relative;
     display: inline-block;
-    font-size: 5.5rem;
+    font-size: 5.51rem;
     font-weight: 700;
     line-height: 1.3;
     /* white-space: nowrap; */
@@ -273,8 +237,8 @@ section {
 }
 
 #foto-principal {
-    min-width: 450px;
-    min-height: 450px;
+    width: 440px;
+    height: 440px;
 }
 
 .foto-principal-resp {
@@ -317,12 +281,12 @@ section {
 }
 
 .animado.imagem-home {
-    width: 50%;
+    width: 45%;
 }
 
-.logo > .animado,
-.navbar > .animado, 
-#menu-icon > .animado,
+.logo .animado,
+.navbar .animado, 
+#menu-icon .animado,
 .home.show-animate .animado {
     animation: showRight 1s ease forwards;
     animation-delay: calc(0.3s * var(--i));

@@ -51,22 +51,22 @@
 
 @media (max-width: 940px) {
     #foto-principal {
-        min-width: 400px;
-        min-height: 400px;
+        width: 400px;
+        height: 400px;
     }
 }
 
 @media (max-width: 882px) {
     #foto-principal {
-        min-width: 350px;
-        min-height: 350px;
+        width: 350px;
+        height: 350px;
     }
 }
 
 @media (max-width: 825px) {
     #foto-principal {
-        min-width: 300px;
-        min-height: 300px;
+        width: 300px;
+        height: 300px;
     }
 
     .home-cont {
