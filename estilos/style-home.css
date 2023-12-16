@@ -78,17 +78,16 @@ header.sticky {
 }
 
 .btn-contato {
-    background-color: #056CF2;
+    background-color: var(--cor-de-fundo);
     border-radius: 10px;
-    padding: 10px;
-}
-
-.btn-contato {
+    padding: inherit;
     font-size: 1.7rem;
     color: white;
     font-weight: 500;
     margin-left: 3.5rem;
     transition: 0.3s;
+    animation: padding_btn_contato 1s ease forwards;
+    animation-delay: 1.6s;
 }
 
 .btn-contato:hover {
@@ -254,7 +253,7 @@ section {
     height: 100%;
     width: 0;
     z-index: 2;
-    transition: 0.3s;
+    transition: 2s;
 }
 
 #sidebar.ativar {
@@ -276,7 +275,7 @@ section {
     right: 0;
     width: 100%;
     height: 100%;
-    background: yellowgreen;
+    background: var(--cor-de-fundo);
     z-index: 98;
 }
 
@@ -288,7 +287,7 @@ section {
 .navbar .animado, 
 #menu-icon .animado,
 .home.show-animate .animado {
-    animation: showRight 1s ease forwards;
+    animation: showRight 0.9s ease forwards;
     animation-delay: calc(0.3s * var(--i));
 }
 
@@ -326,14 +325,16 @@ section {
     }
 }
 
-@keyframes aboutSpinner {
-    100% {
-        transform: translate(-50%, -50%) rotate(360deg);
-    }
-}
 
 @keyframes showRight {
     100% {
         width: 0;
+    }
+}
+
+@keyframes padding_btn_contato {
+    100% {
+        padding: 10px;
+        background-color: #056CF2;
     }
 }
