@@ -81,8 +81,8 @@
     }
 
     .foto-principal-resp {
-        width: 40rem;
-        height: 40rem;
+        width: 45rem;
+        height: 45rem;
         position: relative;
         display: block;
     }
@@ -214,6 +214,12 @@
         font-size: 1.3rem;
     }
 
+}
+
+@media (max-width: 543px){
+    .footer-text {
+        font-size: 1.2rem;
+    }
 }
 
 @media (max-width: 520px) {
