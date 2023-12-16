@@ -255,18 +255,19 @@
 }
 
 @media (max-width: 371px) {
-    /* .home {
-        justify-content: center;
+    .foto-principal-resp {
+        width: 37rem;
+        height: 37rem;
+        position: relative;
+        display: block;
     }
 
-    .home-cont {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        text-align: center;
-    } */
-
-    /* .home-content h1 {
+    .home-cont h1 {
         font-size: 5rem;
-    } */
+    }
+
+    .home-cont p {
+        font-size: 1.4rem;
+        margin: 2rem 0 3rem;
+    }
 }
