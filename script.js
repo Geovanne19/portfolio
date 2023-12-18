@@ -1,3 +1,16 @@
+window.onload = () => sec.classList.add('show-animate')
+
+//animação dos botões
+var btn = document.querySelector(".btn");
+
+btn.onmousemove = function (e) {
+    var x = e.pageX - btn.offsetLeft;
+    var y = e.pageY - btn.offsetTop;
+
+    btn.style.setProperty('--eixoX', x + 'px');
+    btn.style.setProperty('--eixoY', y + 'px');
+}
+
 let menuIcon = document.querySelector('#menu-icon')
 let navbar = document.querySelector('.navbar')
 
@@ -28,9 +41,6 @@ window.onscroll = () => {
                 links.classList.remove('ativo')
                 document.querySelector('header nav a[href*=' + id + ']').classList.add('ativo')
             })
-            sec.classList.add('show-animate')
-        } else {
-            sec.classList.remove('show-animate')
         }
     })
 
@@ -40,3 +50,5 @@ window.onscroll = () => {
     menuIcon.classList.remove('bx-x')
     navbar.classList.remove('ativo')
 }
+
+window.onload = () => sec.classList.add('show-animate')
