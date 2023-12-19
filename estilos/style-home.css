@@ -130,7 +130,9 @@ section {
 .home {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 0 9%;
+    gap: 5%;
 }
 
 #home {
@@ -140,7 +142,6 @@ section {
 
 .home-cont {
     max-width: 61rem;
-    margin-right: 5%;
 }
 
 .home-cont > h1 {
@@ -236,8 +237,8 @@ section {
 }
 
 #foto-principal {
-    width: 440px;
-    height: 440px;
+    width: 55rem;
+    height: 55rem;
 }
 
 .foto-principal-resp {
