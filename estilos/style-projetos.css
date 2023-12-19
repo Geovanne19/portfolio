@@ -1,0 +1,51 @@
+:root {
+    --cor1: #0583F2;
+    --cor2: #056CF2;
+    --cor3: #023859;
+    --cor4: #1F212D;
+    --cor-de-fundo: #131418;
+    --cor-de-fundo-2: black;
+    --cor-do-texto: white;
+    --fonte-principal: 'Poppins', sans-serif;
+}
+
+.cont-projetos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.min-projeto {
+    background: var(--cor-de-fundo-2) url(imagens/icone-site.avif) no-repeat center center;
+    background-size: 120%, cover;
+    width: 30rem;
+    height: 20rem;
+    border: 3.5px solid var(--cor1);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.6s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+}
+
+.min-projeto:hover {
+    background-size: 130%;
+}
+
+.min-projeto > p {
+    font-size: 2rem;
+    color: white;
+    padding: 1rem;
+    background-color: var(--cor1);
+    width: 150%;
+    text-align: center;
+    transform: rotate(30deg);
+}
+
+.projetos {
+    z-index: 40;
+}
