@@ -18,7 +18,8 @@
 }
 
 .min-projeto {
-    background: var(--cor-de-fundo-2) url(imagens/icone-site.avif) no-repeat center center;
+    position: relative;
+    background: var(--cor-de-fundo-2) url(imagens/background001.jpg) no-repeat center center;
     background-size: 120%, cover;
     width: 30rem;
     height: 20rem;
@@ -29,7 +30,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: visible;
+    overflow: hidden;
+}
+
+.blur {
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.308);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .min-projeto:hover {
@@ -37,15 +48,35 @@
 }
 
 .min-projeto > p {
+    position: absolute;
+    display:inline-table;
     font-size: 2rem;
     color: white;
     padding: 1rem;
     background-color: var(--cor1);
-    width: 150%;
+    width: 120%;
     text-align: center;
-    transform: rotate(30deg);
+    transform: rotate(31deg);
+    background: repeating-linear-gradient(-60deg, var(--cor1), var(--cor1) 10px, var(--cor2) 10px, var(--cor2) 20px);
 }
 
 .projetos {
     z-index: 40;
 }
+
+.cont-contato{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 8rem;
+    gap: 4rem;
+    margin: 0 15%;
+    flex-wrap: wrap;
+}
+
+.cont-contato > a {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--cor-do-texto);
+}
+
