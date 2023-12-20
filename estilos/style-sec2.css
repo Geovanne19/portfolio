@@ -134,6 +134,7 @@ btn-box.btns a::before {
     padding-bottom: 5rem;
     background-color: var(--cor-de-fundo);
     border-radius: 30px;
+    min-height: auto;
 }
 
 .habilidades > .habilidades-row {
@@ -255,6 +256,12 @@ btn-box.btns a::before {
     justify-content: center;
 }
 
+.projetos {
+    z-index: 40;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+}
+
 .min-projeto {
     position: relative;
     background: var(--cor-de-fundo-2) url(imagens/background001.jpg) no-repeat center center;
@@ -296,10 +303,6 @@ btn-box.btns a::before {
     text-align: center;
     transform: rotate(31deg);
     background: repeating-linear-gradient(-60deg, var(--cor1), var(--cor1) 10px, var(--cor2) 10px, var(--cor2) 20px);
-}
-
-.projetos {
-    z-index: 40;
 }
 
 .cont-contato {
