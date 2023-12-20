@@ -28,6 +28,7 @@
 .sobre-container {
     background-image: linear-gradient(to top, var(--cor-de-fundo-2), var(--cor2));
     display: flex;
+    min-height: auto;
 }
 
 .sobre {
@@ -38,6 +39,8 @@
     align-items: center;
     display: flex;
     flex-direction: column;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
 .cont-sobre {
@@ -128,7 +131,7 @@ btn-box.btns a::before {
 
 .habilidades{
     padding-top: 5rem;
-    border-bottom: 5rem;
+    padding-bottom: 5rem;
     background-color: var(--cor-de-fundo);
     border-radius: 30px;
 }
