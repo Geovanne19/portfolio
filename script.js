@@ -1,4 +1,4 @@
-window.onload = () => sec.classList.add('show-animate')
+window.onload = () => sec.classList.add('mostrar-animacao')
 
 //animação dos botões
 var btn = document.querySelector(".btn");
@@ -51,4 +51,4 @@ window.onscroll = () => {
     navbar.classList.remove('ativo')
 }
 
-window.onload = () => sec.classList.add('show-animate')
+window.onload = () => sec.classList.add('mostrar-animacao')

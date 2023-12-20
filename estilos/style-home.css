@@ -34,7 +34,7 @@
     outline: none;
     scroll-behavior: smooth;
     font-family: var(--fonte-principal);
-    border: px solid red;
+    border:  px solid red;
 }
 
 html {
@@ -140,6 +140,11 @@ section {
     padding: 8rem 9% 2rem;
 }
 
+#foto-principal {
+    width: 450px;
+    height: 450px;
+}
+
 .home-cont {
     max-width: 61rem;
 }
@@ -236,11 +241,6 @@ section {
     width: 100%;
 }
 
-#foto-principal {
-    width: 55rem;
-    height: 55rem;
-}
-
 .foto-principal-resp {
     width: 0;
     height: 0;
@@ -287,8 +287,8 @@ section {
 .logo .animado,
 .navbar .animado, 
 #menu-icon .animado,
-.home.show-animate .animado {
-    animation: showRight 0.9s ease forwards;
+.home.mostrar-animacao .animado {
+    animation: mostrarDireita 0.9s ease forwards;
     animation-delay: calc(0.3s * var(--i));
 }
 
@@ -327,7 +327,7 @@ section {
 }
 
 
-@keyframes showRight {
+@keyframes mostrarDireita {
     100% {
         width: 0;
     }
