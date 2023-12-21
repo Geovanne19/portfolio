@@ -13,116 +13,101 @@
             font-family: 'Poppins', sans-serif;
         }
 
-        html ,body{
-            display: grid;
-            place-items: center;
-            height: 100%;
-            text-align: center;
-            background: #dde6f0;
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: #e3edf7;
         }
 
-        .circular {
-            height: 100px;
-            width: 100px;
+        .skill {
+            width: 160px;
+            height: 160px;
             position: relative;
-            transform: scale(2);
-        }
-        .circular .inner {
-            position: absolute;
-            z-index: 6;
-            top: 50%;
-            left: 50%;
-            height: 80px;
-            width: 80px;
-            margin: -40px 0 0 -40px;
-            background: #dde6f0;
-            border-radius: 100%;
-            box-shadow: 0 1px 0 rgba(0,0,0,0.2);
         }
 
-        .circular .numb {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 10;
-            font-size: 18px;
-            font-weight: 500;
-            color: #4158d0;
+        .outer {
+            height: 160px;
+            width: 160px;
+            padding: 19px;
+            box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+            -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+            border-radius: 50%;
         }
 
-        .circular .bar{
-            position: absolute;
-            height: 100%;
-            width: 100%;
-            background: #fff;
-            -webkit-border-radius: 100%;
-            clip: rect(0px, 100px, 100px, 50px);
+        .inner {
+            height: 120px;
+            width: 120px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2), inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7), 
+              -0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
         }
 
-        .circle .bar .bar-progress{
-            position: absolute;
-            height: 100%;
-            width: 100%;
-            -webkit-border-radius: 100%;
-            clip: rect(0px, 50px, 100px, 0px);
-            background: #4158d0;
+        #number {
+            font-weight: 600;
+            color: #555;
         }
 
-        .circle .left .bar-progress{
-            z-index: 1;
-            animation: left 1s linear both;
+        circle {
+            fill: none;
+            stroke: url(#GradientColor);
+            stroke-width: 20px;
+            stroke-dasharray: 450;
+            stroke-dashoffset: 450;
+            animation: anim 2s linear forwards;
         }
 
-        @keyframes left {
-            100%{
-                transform: rotate(180deg);
+        @keyframes anim {
+            100% {
+                stroke-dashoffset: 157.5px;
             }
         }
 
-        .circle .right {
-            z-index: 3;
-            transform: rotate(180deg);
+        svg {
+            position: absolute;
+            top: 0;
+            left: 0;
         }
-
-        .circle .right .bar-progress{
-            animation: right 1s linear both;
-            animation-delay: 1s;
-        }
-
-        @keyframes right {
-            100%{
-                transform: rotate(180deg);
-            }
-        }
+        
     </style>
 </head>
 <body>
-    <div class="circular">
-        <div class="inner"></div>
-        <div class="numb">100%</div>
-        <div class="circle">
-            <div class="bar left">
-                <div class="bar-progress"></div>
-            </div>
-            <div class="bar right">
-                <div class="bar-progress">
+    <div class="skill">
+        <div class="outer">
+            <div class="inner">
+                <div id="number">
+                    65%
                 </div>
             </div>
         </div>
+
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+            <defs>
+                <linearGradient id="GradientColor">
+                    <stop offset="0%" stop-color="#DA22FF" />
+                    <stop offset="100%" stop-color="#9733EE" />
+                </linearGradient>
+            </defs>
+            <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+        </svg>
     </div>
 
     <script>
-        const numb = document.querySelector(".numb")
+        let number = document.getElementById('number')
         let counter = 0
-        setInterval(() => {
-            if(counter == 100) {
-                clearInterval()
-            } else{
-                counter+=1
-                numb.textContent = counter + "%"
+
+        setInterval(()=> {
+            if (counter == 65) {
+                clearInterval
+            } else {
+                counter += 1
+                number.innerHTML = `${counter}%`
             }
-        }, 20)
+        }, 30)
     </script>
 </body>
 </html>
