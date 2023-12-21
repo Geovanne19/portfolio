@@ -248,63 +248,6 @@ btn-box.btns a::before {
     width: 0;
 }
 
-.cont-projetos {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5rem;
-    align-items: center;
-    justify-content: center;
-}
-
-.projetos {
-    z-index: 40;
-    padding-bottom: 5rem;
-    padding-top: 5rem;
-}
-
-.min-projeto {
-    position: relative;
-    background: var(--cor-de-fundo-2) url(imagens/background001.jpg) no-repeat center center;
-    background-size: 120%, cover;
-    width: 30rem;
-    height: 20rem;
-    border: 3.5px solid var(--cor1);
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.6s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
-
-.blur {
-    backdrop-filter: blur(5px);
-    background-color: rgba(0, 0, 0, 0.308);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.min-projeto:hover {
-    background-size: 130%;
-}
-
-.min-projeto>p {
-    position: absolute;
-    display: inline-table;
-    font-size: 2rem;
-    color: white;
-    padding: 1rem;
-    background-color: var(--cor1);
-    width: 120%;
-    text-align: center;
-    transform: rotate(31deg);
-    background: repeating-linear-gradient(-60deg, var(--cor1), var(--cor1) 10px, var(--cor2) 10px, var(--cor2) 20px);
-}
-
 .cont-contato {
     display: flex;
     align-items: center;
