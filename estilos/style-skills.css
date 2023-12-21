@@ -1,0 +1,40 @@
+:root {
+    --cor1: #0583F2;
+    --cor2: #056CF2;
+    --cor3: #023859;
+    --cor4: #1F212D;
+    --cor-de-fundo: #131418;
+    --cor-de-fundo-2: black;
+    --cor-do-texto: white;
+    --fonte-principal: 'Poppins', sans-serif;
+}
+
+.circular {
+    height: 100px;
+    width: 100px;
+    background: red;
+    position: relative;
+    transform: scale(2);
+}
+
+.circular > .inner {
+    position: absolute;
+    z-index: 6;
+    top: 50%;
+    left: 50%;
+    height: 80px;
+    width: 80px;
+    margin: -40px 0 0 -40px;
+    background: #dde6f0;
+    border-radius: 100%;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+}
+
+.circular > .circle-bar {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    -webkit-border-radius: 100%;
+    clip: rect(0px, 100px, 100px, 50px);
+}
