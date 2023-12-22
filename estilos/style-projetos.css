@@ -64,19 +64,3 @@
     z-index: 40;
 }
 
-.cont-contato{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 8rem;
-    gap: 4rem;
-    margin: 0 15%;
-    flex-wrap: wrap;
-}
-
-.cont-contato > a {
-    cursor: pointer;
-    text-decoration: none;
-    color: var(--cor-do-texto);
-}
-
