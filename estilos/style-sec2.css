@@ -326,6 +326,8 @@ btn-box.btns a::before {
     align-items: center;
     flex-direction: column;
     width: 100%;
+    height: 100%;
+    border: px solid red;
 }
 
 .good-vibes .astronauta {
