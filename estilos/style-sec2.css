@@ -252,7 +252,7 @@ btn-box.btns a::before {
     background-color: var(--cor-de-fundo);
     border-radius: 30px;
     min-height: auto;
-    padding-bottom: 5rem;
+    padding-bottom: 8rem;
 }
 
 .cont-contato {
@@ -272,10 +272,6 @@ btn-box.btns a::before {
     align-items: center;
 }
 
-.cont-contato>.elemento-contato h3 {
-    color: var(--cor2);
-}
-
 .elemento-contato .link {
     width: 9rem;
     height: 9rem;
@@ -288,7 +284,8 @@ btn-box.btns a::before {
     position: relative;
     overflow: hidden;
     /*estudar */
-    color: var(--cor-do-texto);
+    color: var(--cor1);
+
 }
 
 .elemento-contato .link:hover i {
