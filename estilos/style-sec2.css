@@ -253,6 +253,7 @@ btn-box.btns a::before {
     border-radius: 30px;
     min-height: auto;
     padding-bottom: 8rem;
+    text-align: center;
 }
 
 .cont-contato {
@@ -263,6 +264,7 @@ btn-box.btns a::before {
     gap: 1rem;
     margin: 0 15%;
     flex-wrap: wrap;
+    text-align: center;
 }
 
 .cont-contato > .elemento-contato {
@@ -270,6 +272,7 @@ btn-box.btns a::before {
     flex-direction: column;
     text-align: center;
     align-items: center;
+    margin: auto;
 }
 
 .elemento-contato .link {

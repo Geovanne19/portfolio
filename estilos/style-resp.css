@@ -56,6 +56,12 @@
     }
 }
 
+@media (max-width: 808px) {
+    .cont-contato {
+       text-align: center;
+    }
+}
+
 @media (max-width: 882px) {
     #foto-principal {
         width: 350px;
