@@ -248,6 +248,10 @@ btn-box.btns a::before {
     width: 0;
 }
 
+.contato-container {
+    background-image: linear-gradient(to bottom, var(--cor-de-fundo), var(--cor2));
+}
+
 .contato {
     background-color: var(--cor-de-fundo);
     border-radius: 30px;
@@ -286,9 +290,7 @@ btn-box.btns a::before {
     font-size: 6rem;
     position: relative;
     overflow: hidden;
-    /*estudar */
-    color: var(--cor1);
-
+    color: var(--cor-do-texto);
 }
 
 .elemento-contato .link:hover i {

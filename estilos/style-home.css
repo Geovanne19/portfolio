@@ -141,8 +141,8 @@ section {
 }
 
 #foto-principal {
-    width: 450px;
-    height: 450px;
+    width: 36%;
+    height: 36%;
 }
 
 .home-cont {
@@ -281,7 +281,7 @@ section {
 }
 
 .animado.imagem-home {
-    width: 50%;
+    width: 46%;
 }
 
 .logo .animado,

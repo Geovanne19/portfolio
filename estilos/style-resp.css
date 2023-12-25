@@ -49,32 +49,7 @@
     }
 }
 
-@media (max-width: 940px) {
-    #foto-principal {
-        width: 400px;
-        height: 400px;
-    }
-}
-
-@media (max-width: 808px) {
-    .cont-contato {
-       text-align: center;
-    }
-}
-
-@media (max-width: 882px) {
-    #foto-principal {
-        width: 350px;
-        height: 350px;
-    }
-}
-
-@media (max-width: 825px) {
-    #foto-principal {
-        width: 300px;
-        height: 300px;
-    }
-
+@media (max-width: 825px) {    
     .home-cont {
         margin-right: 1%;
     }
