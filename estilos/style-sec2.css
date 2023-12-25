@@ -250,13 +250,13 @@ btn-box.btns a::before {
 
 .contato-container {
     background-image: linear-gradient(to bottom, var(--cor-de-fundo), var(--cor2));
+    min-height: auto;
+    display: flex;
 }
 
 .contato {
     background-color: var(--cor-de-fundo);
     border-radius: 30px;
-    min-height: auto;
-    padding-bottom: 8rem;
     text-align: center;
 }
 
@@ -337,11 +337,6 @@ btn-box.btns a::before {
     margin-top: 8.5rem;
 }
 
-.good-vibes .astronauta {
-    width: 30rem;
-    height: 30rem;    
-}
-
 .good-vibes q {
     margin-top: -2rem;
     font-size: 1.4rem;
@@ -380,10 +375,6 @@ btn-box.btns a::before {
 .cont-contato>.elemento-contato >.texto-elemento p {
     font-size: 1.2rem;
     opacity: 60%;
-}
-
-.contato-container {
-    background-color: var(--cor-de-fundo-2);
 }
 
 .footer {
