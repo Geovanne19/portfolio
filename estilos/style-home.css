@@ -124,7 +124,8 @@ section {
 
 .container {
     min-height: auto;
-    padding: 7rem 9% 2rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
 .home {
