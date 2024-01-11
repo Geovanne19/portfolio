@@ -260,7 +260,7 @@ btn-box.btns a::before {
     border-radius: 30px;
     text-align: center;
 }
-
+/* arrumar os containers */
 .cont-contato {
     display: flex;
     align-items: center;
