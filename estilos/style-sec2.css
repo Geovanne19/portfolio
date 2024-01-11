@@ -252,6 +252,7 @@ btn-box.btns a::before {
     background-image: linear-gradient(to bottom, var(--cor-de-fundo), var(--cor2));
     min-height: auto;
     display: flex;
+    justify-content: center;
 }
 
 .contato {
