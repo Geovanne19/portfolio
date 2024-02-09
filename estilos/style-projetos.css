@@ -9,6 +9,10 @@
     --fonte-principal: 'Poppins', sans-serif;
 }
 
+.projetos .titulo {
+    margin-top: 0px;
+}
+
 .cont-projetos {
     display: flex;
     flex-wrap: wrap;
