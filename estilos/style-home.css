@@ -35,6 +35,7 @@
     scroll-behavior: smooth;
     font-family: var(--fonte-principal);
     border:  px solid red;
+    overflow-x: hidden;
 }
 
 html {
