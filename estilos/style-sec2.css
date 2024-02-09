@@ -325,7 +325,7 @@ btn-box.btns a::before {
     margin-top: 40px;
 }
 .cont-contato .el-4 .texto-elemento {
-    margin-top: 43px;
+    margin-top: px;
     text-wrap: wrap;
 }
 
@@ -341,6 +341,7 @@ btn-box.btns a::before {
 .good-vibes q {
     margin-top: -2rem;
     font-size: 1.4rem;
+    border: 1px solid red;
 }
 
 .good-vibes p {
