@@ -140,6 +140,10 @@ section {
     padding: 8rem 9% 2rem;
 }
 
+h2 {
+    overflow: hidden;
+}
+
 #foto-principal {
     width: 36%;
     height: 36%;
