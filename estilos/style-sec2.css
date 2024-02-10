@@ -334,7 +334,6 @@ btn-box.btns a::before {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: px solid red;
     margin-top: 8.5rem;
 }
 
