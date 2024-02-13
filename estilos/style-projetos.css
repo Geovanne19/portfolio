@@ -52,6 +52,19 @@
     background-size: 130%;
 }
 
+.min-projeto {
+    color: white;
+    font-size: 2rem;
+    text-shadow: black 0px 0px 3px 4px;
+}
+
+.escuro {
+    background-color: rgba(0, 0, 0, 0.322);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
 .min-projeto > p {
     position: absolute;
     display:inline-table;
