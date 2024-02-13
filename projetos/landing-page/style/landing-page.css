@@ -8,17 +8,10 @@
     font-weight: 400;
 }
 
-html, body {
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 header {
     position: fixed;
     top: .5rem;
+    right: .5%;
     height: 5rem;
     width: 99%;
     display: flex;
@@ -44,25 +37,39 @@ header ul {
 header ul li a {
     color: black;
     text-decoration: none;
-    font-weight: 500
+    font-weight: 500;
 }
 
 main {
     height: 100vh;
     display: flex;
-    justify-content: space-around;
+    gap: 2%;
+    justify-content: space-between;
     align-items: center;
     padding: 0 0 0 8rem;
 }
 
 .apple-vision-pro-main {
-    width: 50rem;
-    object-fit: contain;
+    width: 50vw;  
 }
 
 section {
     height: 100vh;
     background-color: aqua;
+}
+
+.text-main {
+    overflow: hidden;
+}
+
+h1 , span{
+    font-weight: 600;
+    font-size: 3rem;
+    text-wrap: nowrap;
+}
+
+span {
+    color: rgb(151, 67, 230);
 }
 
 
