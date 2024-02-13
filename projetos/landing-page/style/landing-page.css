@@ -6,7 +6,6 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
-    border: 1px solid red;
 }
 
 html, body {
@@ -18,12 +17,16 @@ html, body {
 }
 
 header {
+    position: fixed;
+    top: .5rem;
     height: 5rem;
-    width: 100vw;
+    width: 99%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 8rem;
+    background: rgba(238, 238, 238, 0.801);
+    border-radius: 10px;
 }
 
 .logo-apple {
@@ -46,7 +49,6 @@ header ul li a {
 
 main {
     height: 100vh;
-    width: 100vw;
     display: flex;
     justify-content: space-around;
     align-items: center;
