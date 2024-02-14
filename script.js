@@ -52,3 +52,6 @@ window.onscroll = () => {
 }
 
 window.onload = () => sec.classList.add('mostrar-animacao')
+
+//new function
+
