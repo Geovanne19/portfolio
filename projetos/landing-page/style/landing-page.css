@@ -63,8 +63,13 @@ section {
 
 h1 , span{
     font-weight: 600;
-    font-size: 3rem;
+    font-size: 3.5rem;
     text-wrap: nowrap;
+}
+
+h2 {
+    font-size: 3rem;
+    margin-bottom: -20px;
 }
 
 span {
