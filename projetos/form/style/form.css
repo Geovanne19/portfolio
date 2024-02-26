@@ -8,6 +8,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: var(--fonte-principal);
 }
 
 html, body {
@@ -19,6 +20,15 @@ html, body {
     width: 100%;
     background-image: linear-gradient(45deg, #7756BF, #0C1266);
     padding: 0 3%;
+    position: relative;
+}
+
+h1 {
+    color: white;
+    position: absolute;
+    left: 0;
+    top: 15px;
+    font-size: 2.3rem;
 }
 
 main {
@@ -28,6 +38,7 @@ main {
     border-radius: 20px;
     backdrop-filter: blur(20px);
     display: flex;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.267);
 }
 
 form {
@@ -35,13 +46,15 @@ form {
     height: 100%;
     border-radius: 20px 0px 0px 20px;
     padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 form h1 {
     color: white;
-    text-align: center;
-    font: var(--fonte-principal);
-
+    font-size: 2.3em;
 }
 
 figure {
