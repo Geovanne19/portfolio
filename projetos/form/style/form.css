@@ -39,6 +39,90 @@ main {
     backdrop-filter: blur(20px);
     display: flex;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.267);
+    position: relative;
+    overflow: hidden;
+}
+
+main span:first-of-type {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.26));
+    animation: borda 15s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes borda {
+    0% {
+        transform: translateX(-100%)
+    }
+
+    100% {
+        transform: translateX(100%)
+    }
+}
+
+main span:nth-of-type(2) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.26));
+    animation: borda2 15s linear infinite;
+}
+
+@keyframes borda2 {
+    0% {
+        transform: translateY(-100%)
+    }
+
+    100% {
+        transform: translateY(100%)
+    }
+}
+
+main span:nth-of-type(3) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to left, transparent, rgba(255, 255, 255, 0.26));
+    animation: borda3 15s linear infinite;
+}
+
+@keyframes borda3 {
+    0% {
+        transform: translateX(100%)
+    }
+
+    100% {
+        transform: translateX(-100%)
+    }
+}
+
+main span:last-of-type {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to top, transparent, rgba(255, 255, 255, 0.26));
+    animation: borda4 15s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes borda4 {
+    0% {
+        transform: translateY(100%)
+    }
+
+    100% {
+        transform: translateY(-100%)
+    }
 }
 
 form {
@@ -55,6 +139,7 @@ form {
 form h1 {
     color: white;
     font-size: 2.3em;
+    position: static;
 }
 
 figure {
