@@ -2,6 +2,7 @@
 
 :root {
     --fonte-principal: 'Poppins', sans-serif;
+    --tam: 5rem;
 }
 
 * {
@@ -11,17 +12,21 @@
     font-family: var(--fonte-principal);
 }
 
-html, body {
+body {
     background-image: linear-gradient(45deg, #7756BF, #0C1266);
+    height: 100vh;
 }
 
 header {
+    position: absolute;
+    background-color: #0C1266;
     display: flex;
     justify-content: left;
     align-items: center;
     width: 100vw;
-    padding: 20px 40px;
-    background-color: #0C1266;
+    height: var(--tam);
+    padding: 0 40px;
+    z-index: 100;
 }
 
 .container {
@@ -29,6 +34,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    object-fit: hidden;
 }
 
 h1 {
@@ -37,8 +43,8 @@ h1 {
 }
 
 main {
-    width: 900px;
-    height: 500px;
+    width: 55rem;
+    height: 30rem;
     border: 1px solid rgba(255, 255, 255, 0.425);
     border-radius: 20px;
     display: flex;
