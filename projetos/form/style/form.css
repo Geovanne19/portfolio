@@ -19,15 +19,22 @@ body {
     justify-content: center;
 }
 
+header {
+    position: fixed;
+    top: 0;
+    height: 100px;
+    width: 100vw;
+}
+
 .container {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: visible;
 }
 
 #logo {
-    position: absolute;
     color: white;
     font-size: 2.3rem;
     z-index: 200;
@@ -36,8 +43,8 @@ body {
 }
 
 main {
-    width: 55rem;
-    height: 30rem;
+    width: 70vw;
+    height: 70vh;
     border: 1px solid rgba(255, 255, 255, 0.425);
     border-radius: 20px;
     display: flex;
