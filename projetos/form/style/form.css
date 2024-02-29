@@ -9,6 +9,7 @@
     padding: 0;
     margin: 0;
     font-family: var(--fonte-principal);
+    outline: none;
 }
 
 body {
@@ -27,11 +28,9 @@ header {
 }
 
 .container {
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: visible;
 }
 
 #logo {
@@ -44,7 +43,7 @@ header {
 
 main {
     width: 70vw;
-    height: 70vh;
+    height: 75vh;
     border: 1px solid rgba(255, 255, 255, 0.425);
     border-radius: 20px;
     display: flex;
@@ -79,12 +78,58 @@ main form {
     width: 50%;
     height: 100%;
     border-radius: 20px 0px 0px 20px;
-    padding: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 30px;
     flex-direction: column;
     background-image: linear-gradient(45deg, #7756BF, #0C1266);
+    z-index: 1;
+}
+
+#logo {
+    margin-left: 4%;
+    margin-top: -1%;
+    font-size: 250%;
+}
+
+h2 {
+    color: rgba(255, 255, 255, 0.651);
+    font-weight: 400;
+    margin-bottom: -1%;
+    font-size: 150%;
+}
+
+main form .form-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 74%;
+    flex-direction: column;
+    gap: 3%;
+}
+
+form input {
+    border-radius: 3px;
+    border: 1px solid white;
+    font-size: 15px;
+    width: 65%;
+    background-color: rgba(255, 255, 255, 0.603);
+    color: white;
+}
+
+#entrar {
+    background-color: #7756BF;
+    color: white;
+    margin-top: 1%;
+}
+
+form .form-cont p label {
+    color: white;
+    font-weight: 300;
+}
+
+input {
+    cursor: pointer;
+    padding: 1% 2%;
 }
 
 main form h1 {
