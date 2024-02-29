@@ -20,6 +20,14 @@ body {
     justify-content: center;
 }
 
+.textura {
+    position: absolute;
+    background-image: url(imagens/pngegg.png);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
 header {
     position: fixed;
     top: 0;
