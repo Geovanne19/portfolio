@@ -93,16 +93,16 @@ main form {
 }
 
 #logo {
+    min-width: 100px;
     margin-left: 4%;
     margin-top: -1%;
-    font-size: 250%;
+    font-size: 3.5vw;
 }
 
 h2 {
-    color: rgba(255, 255, 255, 0.651);
+    color: rgb(255, 255, 255);
     font-weight: 400;
-    margin-bottom: -1%;
-    font-size: 150%;
+    font-size: 2.3vw;
 }
 
 main form .form-cont {
