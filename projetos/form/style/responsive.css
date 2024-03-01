@@ -37,7 +37,11 @@
     }
     
     #logo {
-        font-size: 2.5rem;
+        font-size: 2.3rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
     }
 
     main {
@@ -45,8 +49,13 @@
         height: 50vh;
     }
 
+    main form {
+        padding: 20px;
+    }
+
     form input {
         width: 100%;
+        font-size: 0.8rem;
     }
 }
 
