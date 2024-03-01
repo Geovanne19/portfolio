@@ -45,8 +45,10 @@ header {
     color: white;
     font-size: 2.3rem;
     z-index: 200;
-    top: -4.2rem;
-    left: -8rem;
+    position: absolute;
+    z-index: 300;
+    top: 0;
+    left: 0;
 }
 
 main {
@@ -83,6 +85,9 @@ main {
 }
 
 main form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 50%;
     height: 100%;
     border-radius: 20px 0px 0px 20px;
@@ -90,6 +95,17 @@ main form {
     flex-direction: column;
     background-image: linear-gradient(45deg, #7756BF, #0C1266);
     z-index: 1;
+    position: relative;
+}
+
+main form .form-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 74%;
+    flex-direction: column;
+    gap: 3%;
 }
 
 #logo {
@@ -102,16 +118,6 @@ h2 {
     color: rgb(255, 255, 255);
     font-weight: 400;
     font-size: 2.3vw;
-}
-
-main form .form-cont {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 74%;
-    flex-direction: column;
-    gap: 3%;
 }
 
 form input {

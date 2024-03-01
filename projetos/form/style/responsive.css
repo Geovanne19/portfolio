@@ -1,0 +1,33 @@
+@media (max-width: 950px) {
+    figure {
+        position: absolute;
+    }
+    main form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 680px) {
+    form input  {
+        width: 85%;
+    }
+}
+
+@media (max-width: 530px) {
+    main {
+        width: 85vw;
+        height: 60vh;
+    }
+
+    form input {
+        width: 90%;
+    }
+}
+
+@media (max-width: 340px) {
+    
+}
+
+@media (max-height: 500px) {
+    
+}
