@@ -29,3 +29,9 @@ form {
     padding: 4% 10%;
 }
 
+input {
+    border-radius: .5rem;
+    border: 1px solid black;
+    padding: .4rem;
+}
+
