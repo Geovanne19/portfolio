@@ -24,11 +24,13 @@ figure {
     background-image: url(imagens/conceito-de-rpa-com-tela-de-toque-de-mao-embacada.jpg);
     width: 50%;
     height: 100%;
+    border-radius: 1rem 0 0  1rem;
 }
 
 section {
-    width: 75%;
-    height: 75%;
+    width: 90%;
+    height: 90%;
+    display: flex;
 }
 
 body {
@@ -37,7 +39,7 @@ body {
 
 form {
     border-radius: 1rem;
-    width: 100%;
+    width: 50%;
     height: 100%;
     background-color: white;
     padding: 4% 6%;
