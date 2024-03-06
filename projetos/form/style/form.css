@@ -22,7 +22,7 @@ html, body {
 
 figure {
     background-image: url(imagens/conceito-de-rpa-com-tela-de-toque-de-mao-embacada.jpg);
-    background-size: 155%;
+    background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     width: 50%;
