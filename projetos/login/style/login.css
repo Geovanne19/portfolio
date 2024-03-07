@@ -35,12 +35,6 @@ header {
     width: 100vw;
 }
 
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 #logo {
     color: white;
     font-size: 2.3rem;
