@@ -45,17 +45,6 @@ header {
     left: 0;
 }
 
-main {
-    width: 70vw;
-    height: 75vh;
-    border: 1px solid rgba(255, 255, 255, 0.425);
-    border-radius: 20px;
-    display: flex;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.267);
-    position: relative;
-    min-height: 300px;
-}
-
 .box {
     position: relative;
     overflow: hidden;
@@ -77,6 +66,17 @@ main {
     background-color: transparent;
     inset: 1px;
     filter: blur(30px);
+}
+
+main {
+    width: 70vw;
+    height: 75vh;
+    border: 2px solid rgba(255, 255, 255, 0.425);
+    border-radius: 22px;
+    display: flex;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.267);
+    position: relative;
+    min-height: 300px;
 }
 
 main form {

@@ -1,9 +1,11 @@
 @media (max-width: 950px) {
     figure {
         position: absolute;
+        opacity: 0;
     }
     main form {
         width: 100%;
+        border-radius: 20px;
     }
     #logo {
         font-size: 3rem;
