@@ -11,13 +11,13 @@
     font-family: var(--fonte-principal);
 }
 
-html, body {
+body {
     background-image: linear-gradient(45deg, #7756BF, #0C1266);
-    width: 100vw;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 10px;
 }
 
 figure {
@@ -41,24 +41,6 @@ body {
 }
 
 form {
-    border-radius: 0 1rem 1rem 0;
-    width: 50%;
-    height: 100%;
-    background-color: white;
-    padding: 4% 6%;
-}
-
-input {
     border-radius: .5rem;
-    border: 1px solid black;
-    padding: .4rem;
-}
-
-button {
-    padding: .4rem;
-    border-radius: .5rem;
-    border: none;
-    background-color: #7756BF;
-    color: white;
 }
 
