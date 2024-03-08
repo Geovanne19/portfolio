@@ -57,7 +57,7 @@ header {
     width: 100%;
     height: 100%;
     background-color: white;
-    animation: animate 30s linear infinite;
+    animation: animate 50s linear infinite;
 }
 
 .box::after {
