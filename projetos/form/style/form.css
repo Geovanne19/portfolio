@@ -26,6 +26,8 @@ body {
     background: white;
     padding: 25px 30px;
     border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .container form {
