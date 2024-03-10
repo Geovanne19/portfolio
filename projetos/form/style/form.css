@@ -57,3 +57,11 @@ form .container .input-box input:valid{
     border-color: #7756BF;
 }
 
+button {
+    border-radius: .3rem;
+    padding: .3rem;
+    color: white;
+    border: none;
+    background-color:#7756BF;
+}
+
