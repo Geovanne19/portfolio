@@ -20,6 +20,10 @@ body {
     padding: 10px;
 }
 
+h1{
+    margin-bottom: 25px;
+}
+
 .container {
     max-width: 700px;
     width: 100%;
