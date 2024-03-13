@@ -64,7 +64,7 @@ form .container .input-box input:valid{
 
 .box-button {
     display: flex;
-    justify-content: right;
+    justify-content:space-between;
     margin-top: 5px;
 }
 
@@ -77,7 +77,7 @@ button {
     display: flex;
     cursor: pointer;
 }
-button i {
+button i, h2{
     font-size: 30px;
 }
 
