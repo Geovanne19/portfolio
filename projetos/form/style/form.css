@@ -20,17 +20,30 @@ body {
     padding: 10px;
 }
 
-h1{
-    font-size: 30px;
-    margin-bottom: 25px;
-}
-
 .container {
     max-width: 700px;
     width: 100%;
     background: white;
     padding: 25px 30px;
     border-radius: .5rem;
+}
+
+.box-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.box-title p {
+    font-size: 12px;
+}
+
+h1{
+    font-size: 30px;
+    margin-bottom: .8rem;
+    padding-bottom: .6rem;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.432);
 }
 
 .container form {
@@ -57,6 +70,30 @@ h1{
     transition: all 0.3s ease;
 }
 
+.input-gender {
+    width: 100%;
+}
+
+.box-radios {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.5rem .4rem 1.5rem;
+}
+
+.box-radios p {
+    font-size: .9rem;
+    margin-left: .2rem;
+}
+
+.box-input-radios {
+    display: flex;
+    align-items: center;
+}
+
+.box-input-radios input {
+    color: #7756BF;
+}
+
 form .input-box input:focus,
 form .container .input-box input:valid{
     border-color: #7756BF;
@@ -79,5 +116,18 @@ button {
 }
 button i, h2{
     font-size: 30px;
+}
+
+.faça-login {
+    font-size: .8rem;
+    text-align: center;
+    padding: 1rem 5rem 0 5rem;
+    border-top: 1px solid rgba(128, 128, 128, 0.432);
+    margin-top: 1rem;
+}
+
+.faça-login a {
+    color: #7756BF;
+    font-weight: 500;
 }
 
