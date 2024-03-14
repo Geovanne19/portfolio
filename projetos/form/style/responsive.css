@@ -2,7 +2,6 @@
 
     html {
         font-size: 90%;
-        min-width: 200px;
     }
 
     body {
@@ -25,6 +24,33 @@
     }
 }
 
-@media (max-width: 560px) {
-    
+@media (max-width: 250px) {
+
+    html, body {
+        font-size: 80%;
+        min-height: 100%;
+    }
+
+    .container {
+        padding: 10px 15px 10px 15px;
+    }
+}
+
+@media (max-width: 142px) {
+    .box-button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }  
+}
+
+@media (max-width: 132px) {
+    .box-input-radios {
+        flex-direction: column;
+    }
+
+    .box-radios p {
+        font-size: .8rem;
+    }
 }

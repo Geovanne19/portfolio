@@ -27,6 +27,7 @@ body {
     background: white;
     padding: 25px 30px 20px 30px;
     border-radius: .5rem;
+    overflow-x: hidden;
 }
 
 .box-title{
@@ -60,7 +61,7 @@ h1{
 }
 
 .input-box input {
-    height: 35px;
+    height: 2rem;
     width: 100%;
     outline: none;
     border-radius: .3rem;
@@ -84,6 +85,8 @@ h1{
 .box-radios p {
     font-size: .9rem;
     margin-left: .2rem;
+    text-wrap: wrap;
+    text-align: center;
 }
 
 .box-input-radios {
@@ -116,13 +119,13 @@ button {
     cursor: pointer;
 }
 button i, h2{
-    font-size: 30px;
+    font-size: 1.7rem;
 }
 
 .faça-login {
     font-size: .8rem;
     text-align: center;
-    padding: 1rem 5rem 0 5rem;
+    padding-top: 1rem;
     border-top: 1px solid rgba(128, 128, 128, 0.432);
     margin-top: 1rem;
 }
