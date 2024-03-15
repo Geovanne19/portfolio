@@ -10,60 +10,67 @@
 </head>
 <body>
     <div class="container">
-        <h1>Criar Nova Conta</h1>
-        <form action="#">
-             <div class="input-box">
-                <p><label for="nome">Nome Completo</label></p>
-                <input id="nome" type="text">
-             </div>
-            <div class="input-box">
-                <p><label for="cpf">CPF</label></p>
-                <input id="cpf" type="number">
-            </div>
-            <div class="input-box">
-                <p><label for="email">Email</label></p>
-                <input id="email" type="text">
-            </div>
-            <div class="input-box">
-                <p><label for="telefone">Telefone</label></p>
-                <input id="telefone" type="number">
-            </div>
-            <div class="input-box">
-                <p><label for="senha">Senha</label></p>
-                <input id="senha" type="number">
-            </div>
-            <div class="input-box">
-                <p><label for="confirme">Confirme a senha</label></p>
-                <input id="confirme" type="number">
-            </div>
-            <div class="input-gender">
-                Gênero
-                <div class="box-radios">
-                    <div class="box-input-radios">
-                        <input type="radio">
-                        <p>Masculino</p>
-                    </div>
-                    <div class="box-input-radios">
-                        <input type="radio">
-                        <p>Feminino</p>
-                    </div>
-                    <div class="box-input-radios">
-                        <input type="radio">
-                        <p>Outros</p>
-                    </div>
-                    <div class="box-input-radios">
-                        <input type="radio">
-                        <p>Prefiro não dizer</p>
+        <div class="slide-1">
+            <h1>Criar Nova Conta</h1>
+            <form action="#">
+                 <div class="input-box">
+                    <p><label for="nome">Nome Completo</label></p>
+                    <input id="nome" type="text" placeholder="Seu nome completo">
+                 </div>
+                <div class="input-box">
+                    <p><label for="cpf">CPF</label></p>
+                    <input id="cpf" type="number" placeholder="Seu CEP">
+                </div>
+                <div class="input-box">
+                    <p><label for="email">Email</label></p>
+                    <input id="email" type="text" placeholder="">
+                </div>
+                <div class="input-box">
+                    <p><label for="telefone">Telefone</label></p>
+                    <input id="telefone" type="number" placeholder="">
+                </div>
+                <div class="input-box">
+                    <p><label for="senha">Senha</label></p>
+                    <input id="senha" type="number" placeholder="">
+                </div>
+                <div class="input-box">
+                    <p><label for="confirme">Confirme a senha</label></p>
+                    <input id="confirme" type="number" placeholder="">
+                </div>
+                <div class="input-gender">
+                    Gênero
+                    <div class="box-radios">
+                        <div class="box-input-radios">
+                            <input type="radio">
+                            <p>Masculino</p>
+                        </div>
+                        <div class="box-input-radios">
+                            <input type="radio">
+                            <p>Feminino</p>
+                        </div>
+                        <div class="box-input-radios">
+                            <input type="radio">
+                            <p>Outros</p>
+                        </div>
+                        <div class="box-input-radios">
+                            <input type="radio">
+                            <p>Prefiro não dizer</p>
+                        </div>
                     </div>
                 </div>
+            </form>
+            <div class="box-button">
+                <h2>Logo.</h2>
+                <button onclick="slide1_2()"><i class='bx bx-right-arrow-alt'></i></button>
             </div>
-        </form>
-        <div class="box-button">
-            <h2>Logo.</h2>
-            <button><i class='bx bx-right-arrow-alt'></i></button>
+            <p class="faça-login">Já tem conta? <a href="#">Faça login</a></p>
         </div>
-        <p class="faça-login">Já tem conta? <a href="#">Faça login</a></p>
+        <div class="slide-2">
+        
+        </div>
     </div>
+
+    <script src="form.js"></script>
 </body>
 </html>
 

@@ -30,6 +30,10 @@ body {
     overflow-x: hidden;
 }
 
+.slide-1 {
+    transition: 5s;
+}
+
 .box-title{
     display: flex;
     align-items: center;
@@ -61,7 +65,7 @@ h1{
 }
 
 .input-box input {
-    height: 2rem;
+    height: 2.4rem;
     width: 100%;
     outline: none;
     border-radius: .3rem;
