@@ -11,10 +11,6 @@
     font-family: var(--fonte-principal);
 }
 
-html {
-    height: 100%;
-}
-
 body {
     background-image: linear-gradient(45deg, #7756BF, #0C1266);
     background-repeat: no-repeat;
@@ -31,6 +27,7 @@ body {
     padding: 25px 30px 20px 30px;
     border-radius: .5rem;
     overflow-x: hidden;
+    height: auto;
 }
 
 .slide-1 {
@@ -141,5 +138,9 @@ button i, h2{
 .faça-login a {
     color: #7756BF;
     font-weight: 500;
+}
+
+.no-touch {
+    height: 100%;
 }
 
