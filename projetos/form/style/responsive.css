@@ -16,8 +16,10 @@
 
     .box-radios {
         display: block;
-        justify-content: space-between;
         padding:0 .5rem .4rem .5rem;
+    }
+    .box-input-radios {
+        margin-bottom: .1rem;
     }
 }
 
