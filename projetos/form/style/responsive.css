@@ -9,7 +9,7 @@
     }
 
     .container {
-        max-width: 100%;
+        width: 100%;
     }
 
     .container form .input-box {
@@ -28,7 +28,7 @@
 
     html, body {
         font-size: 80%;
-        min-height: 100%;
+        min-height: 100vh;
     }
 
     .container {
