@@ -19,7 +19,7 @@
                  </div>
                 <div class="input-box">
                     <p><label for="cpf">CPF</label></p>
-                    <input id="cpf" type="number" placeholder="Seu CEP">
+                    <input id="cpf" type="text" placeholder="Seu CEP">
                 </div>
                 <div class="input-box">
                     <p><label for="email">Email</label></p>
@@ -27,11 +27,11 @@
                 </div>
                 <div class="input-box">
                     <p><label for="telefone">Telefone</label></p>
-                    <input id="telefone" type="number" placeholder="">
+                    <input id="telefone" type="text" placeholder="">
                 </div>
                 <div class="input-box">
                     <p><label for="senha">Senha</label></p>
-                    <input id="senha" type="number" placeholder="">
+                    <input id="senha" type="password" placeholder="">
                 </div>
                 <div class="input-box">
                     <p><label for="confirme">Confirme a senha</label></p>
@@ -71,6 +71,12 @@
     </div>
 
     <script src="form.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>
+    <script>
+        $('#cpf').mask('000.000.000-00', { reverse: true });
+        $('#telefone').mask('(00) 00000-0000');
+    </script>
 </body>
 </html>
 
