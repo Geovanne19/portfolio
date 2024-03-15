@@ -28,7 +28,7 @@
 
     html, body {
         font-size: 80%;
-        min-height: 100vh;
+        min-height: 100%;
     }
 
     .container {
