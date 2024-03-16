@@ -2,11 +2,10 @@
 
     html {
         font-size: 90%;
-        height: 100%;
     }
 
     .container {
-        max-width: 100%;
+        
     }
 
     .container form .input-box {
