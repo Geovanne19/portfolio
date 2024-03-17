@@ -135,6 +135,7 @@ button {
     display: flex;
     cursor: pointer;
 }
+
 button i, h2{
     font-size: 1.7rem;
 }
