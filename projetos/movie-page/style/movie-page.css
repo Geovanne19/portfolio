@@ -28,6 +28,10 @@ header {
     justify-content: space-around;
     background-color: black;
     height: 70px;
+    border-bottom: 1px solid white;
+    position: absolute;
+    top: 0;
+    width: 100%;
 }
 
 header ul {
@@ -70,4 +74,9 @@ header input::placeholder {
     transform: translate(-50%, -50%);
     font-size: 1.2rem;
     color: orangered;
+}
+
+section {
+    background-color: black;
+    height: 100vh;
 }
