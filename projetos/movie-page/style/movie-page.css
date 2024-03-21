@@ -76,6 +76,17 @@ header input::placeholder {
     color: orangered;
 }
 
+header > a{
+    text-decoration: none;
+    padding: 7px;
+    border: 2px solid orangered;
+    border-radius: 10px;
+    transition: .5s ease;
+}
+header > a:hover {
+    background-color: orangered;
+}
+
 section {
     background-color: black;
     height: 100vh;
