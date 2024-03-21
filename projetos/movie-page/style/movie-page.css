@@ -24,15 +24,19 @@ header ul {
     display: flex;
     gap: 10px;;
     list-style: none;
+    object-fit: contain;
+    width: 230px;
+    background-color: blue;
 }
 
 header ul li a {
     padding: 5px;
-    background-color: blue;
     border-radius: 5px;
     text-decoration: none;
+    transition: .5s;
 }
 
 header ul li a:hover {
-    background-color: ;
+    background-color: rgba(255, 68, 0, 0.384);
+    padding: 7px;
 }
