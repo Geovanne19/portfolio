@@ -54,10 +54,10 @@ header input {
     border: none;
     padding: 7px 00 7px 10px;
     border-radius: 20px;
-    border-right: 35px solid rgba(255, 68, 0, 0.384);;
+    border-right: 35px solid transparent;
 }
 header input::placeholder {
-    color: rgba(255, 255, 255, 0.63);
+    color: rgba(255, 255, 255, 0.452);
     font-size: .8rem;
 }
 .box-search{
@@ -65,7 +65,9 @@ header input::placeholder {
 }
 .bx-search {
     position: absolute;
-    right: 5px;
+    right: 0;
     top: 50%;
-    transform: rotate(50%50%);
+    transform: translate(-50%, -50%);
+    font-size: 1.2rem;
+    color: orangered;
 }
