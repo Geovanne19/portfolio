@@ -10,6 +10,16 @@
     margin: 0;
     color: white;
     font-family: var(--fonte-principal);
+    font-size: 97%;
+}
+
+html {
+    font-size: 95%;
+}
+
+h1 {
+    color: orangered;
+    font-size: 2rem;
 }
 
 header {
@@ -24,19 +34,28 @@ header ul {
     display: flex;
     gap: 10px;;
     list-style: none;
-    object-fit: contain;
     width: 230px;
-    background-color: blue;
 }
 
 header ul li a {
     padding: 5px;
     border-radius: 5px;
     text-decoration: none;
-    transition: .5s;
+    transition:.5s ease;
+    font-weight: 500
 }
 
 header ul li a:hover {
     background-color: rgba(255, 68, 0, 0.384);
-    padding: 7px;
+}
+
+header input {
+    background-color: rgba(255, 68, 0, 0.384);
+    border: none;
+    padding: 7px 00 7px 10px;
+    border-radius: 20px;
+}
+header input::placeholder {
+    color: rgba(255, 255, 255, 0.63);
+    font-size: .8rem;
 }
