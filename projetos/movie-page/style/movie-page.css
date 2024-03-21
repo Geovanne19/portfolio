@@ -28,9 +28,6 @@ header {
     justify-content: space-around;
     background-color: black;
     height: 70px;
-    border-bottom: 1px solid white;
-    position: absolute;
-    top: 0;
     width: 100%;
 }
 
@@ -82,9 +79,11 @@ header > a{
     border: 2px solid orangered;
     border-radius: 10px;
     transition: .5s ease;
+    color: orangered;
 }
 header > a:hover {
     background-color: orangered;
+    color: white;
 }
 
 section {
