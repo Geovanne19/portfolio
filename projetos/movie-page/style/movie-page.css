@@ -112,6 +112,12 @@ header > a:hover {
     background: url(imagens/389760.jpeg) right center no-repeat;
     background-size: cover;
 }
+
+.shadow-box {
+    
+}
+
 .section-2 {
     height: 100vh;
+    color: black;
 }
