@@ -98,7 +98,7 @@ header > a:hover {
 }
 
 .principal {
-    position: relative;
+   
     background-color: black;
     height: calc(100vh);
     display: flex;
