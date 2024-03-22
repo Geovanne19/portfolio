@@ -14,8 +14,14 @@
     font-size: 97%;
 }
 
+::-webkit-scrollbar {
+    width: 2px;
+
+}
+
 html {
     font-size: 95%;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -102,7 +108,7 @@ header > a:hover {
     width: 100vw;
     height: 100vh;
     /* border-radius: 30px; */
-    background: url(imagens/389760.jpeg) center center no-repeat;
+    background: url(imagens/389760.jpeg) right center no-repeat;
     background-size: cover;
 }
 .section-2 {
