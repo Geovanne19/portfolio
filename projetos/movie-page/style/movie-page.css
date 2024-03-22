@@ -2,6 +2,7 @@
 
 :root {
     --fonte-principal: 'Poppins', sans-serif;
+    --cor-principal: rgb(133, 100, 250);;
 }
 
 * {
@@ -18,7 +19,7 @@ html {
 }
 
 h1 {
-    color: orangered;
+    color: var(--cor-principal);
     font-size: 2rem;
 }
 
@@ -51,7 +52,7 @@ header ul li a:hover {
 }
 
 header input {
-    background-color: rgba(255, 68, 0, 0.384);
+    background-color: rgba(132, 100, 250, 0.37);;
     border: none;
     padding: 7px 00 7px 10px;
     border-radius: 20px;
@@ -70,19 +71,19 @@ header input::placeholder {
     top: 50%;
     transform: translate(-50%, -50%);
     font-size: 1.2rem;
-    color: orangered;
+    color: rgb(133, 100, 250);;
 }
 
 header > a{
     text-decoration: none;
     padding: 7px;
-    border: 2px solid orangered;
+    border: 2px solid rgb(133, 100, 250);;
     border-radius: 10px;
     transition: .5s ease;
-    color: orangered;
+    color: rgb(133, 100, 250);
 }
 header > a:hover {
-    background-color: orangered;
+    background-color: rgb(133, 100, 250);;
     color: white;
 }
 
@@ -101,4 +102,5 @@ header > a:hover {
     border-radius: 30px;
     background: url(imagens/389760.jpeg) center center no-repeat;
     background-size: cover;
+
 }
