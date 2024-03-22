@@ -36,7 +36,8 @@ header {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
     height: 70px;
     width: 100%;
-    position: fixed;
+    position: absolute;
+    top: 0;
 }
 
 header ul {
@@ -124,5 +125,5 @@ header > a:hover {
 
 .section-2 {
     height: 100vh;
-    color: black;
+    background-color: black;
 }
