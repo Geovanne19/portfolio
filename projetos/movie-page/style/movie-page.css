@@ -61,11 +61,12 @@ header ul li a:hover {
 }
 
 header input {
-    background-color: rgba(132, 100, 250, 0.37);;
+    background-color: transparent;
     border: none;
     padding: 7px 00 7px 10px;
     border-radius: 20px;
     border-right: 35px solid transparent;
+    box-shadow: 0 0 10px rgb(0, 0, 0)
 }
 header input::placeholder {
     color: rgba(255, 255, 255, 0.452);
