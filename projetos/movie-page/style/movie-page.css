@@ -97,6 +97,7 @@ header > a:hover {
 }
 
 .principal {
+    position: relative;
     background-color: black;
     height: calc(100vh);
     display: flex;
@@ -114,7 +115,11 @@ header > a:hover {
 }
 
 .shadow-box {
-    
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    height: 70px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
 }
 
 .section-2 {
