@@ -159,5 +159,5 @@ header > a:hover {
 
 .section-2 {
     height: 100vh;
-    background-color: black;
+    background-color: var(--cor-background);
 }
