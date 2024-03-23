@@ -2,7 +2,10 @@
 
 :root {
     --fonte-principal: 'Poppins', sans-serif;
-    --cor-principal: white;
+    --cor-texto: white;
+    --cor-background: #0B141B;
+    --cor-pricipal: #03A678;
+    --cor-pricipal-clara: #33d1a4;
 }
 
 * {
@@ -19,7 +22,6 @@
 }
 ::-webkit-scrollbar-track {
     background-color: #0B141B;
-    position: absolute;
 }
 ::-webkit-scrollbar-thumb {
     background-color: rgba(255, 255, 255, 0.075);
@@ -33,7 +35,7 @@ html {
 }
 
 h1 {
-    color: var(--cor-principal);
+    color: var(--cor-texto);
     font-size: 2rem;
     text-shadow: 0 0 10px rgb(0, 0, 0)
 }
@@ -65,11 +67,11 @@ header ul li a {
     text-decoration: none;
     transition:.5s ease;
     font-weight: 500;
-    text-shadow: 0 0 10px rgb(0, 0, 0)
+    text-shadow: 0 0 10px rgb(0, 0, 0);
 }
 
 header ul li a:hover {
-    background-color: rgba(255, 68, 0, 0.384);
+    color: var(--cor-pricipal-clara);
 }
 
 header input {
@@ -103,8 +105,7 @@ header input:focus {
     transition: .3s;
 }
 .bx-search:hover {
-    font-size: 1.23rem;
-    text-shadow: black;
+    color: var(--cor-pricipal-clara);
 }
 
 header > a {
@@ -114,10 +115,10 @@ header > a {
     border: 2px solid white;
     border-radius: 10px;
     transition: .5s ease;
-    color: var(--cor-principal);
+    color: var(--cor-texto);
 }
 header > a:hover {
-    background-color: rgb(133, 100, 250);
+    background-color: var(--cor-pricipal);
     color: white;
 }
 
