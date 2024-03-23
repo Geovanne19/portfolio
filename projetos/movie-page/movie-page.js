@@ -1,7 +1,7 @@
 let lastScrollTop = 0;
 
 window.addEventListener("scroll", function() {
-    let currentScroll = window.scrollY || document.documentElement.scrollTop;
+    let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
     
     if (currentScroll > lastScrollTop) {
         // Scroll para baixo
