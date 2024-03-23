@@ -11,4 +11,10 @@ window.addEventListener("scroll", function() {
         document.getElementById("header").style.top = "0"; // Mostra o header
     }
     lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Para lidar com scroll no topo da página
+
+    if(currentScroll != 0) {
+        document.getElementById("header").style.background = "#0B141B";
+    } else {
+        document.getElementById("header").style.background = "transparent";
+    }
 }, false);

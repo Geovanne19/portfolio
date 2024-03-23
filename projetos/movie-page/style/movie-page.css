@@ -38,9 +38,10 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    transition: top 0.3s;
+    transition: top .5s;
     height: 70px;
     z-index: 2;
+    background-color: transparent;
 }
 
 header ul {
@@ -102,9 +103,8 @@ header > a:hover {
 }
 
 .principal {
-   
     background-color: black;
-    height: calc(100vh);
+    height: 300vh;
     display: flex;
     justify-content: center;
     /* padding: 3% 12%; */
