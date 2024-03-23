@@ -80,20 +80,22 @@ header input {
     padding: 7px 00 7px 10px;
     border-radius: 20px;
     border-right: 35px solid transparent;
-    box-shadow: 0 0 10px rgb(0, 0, 0);
     cursor: pointer;
 }
 header input::placeholder {
-    color: rgba(255, 255, 255, 0.623);
+    color: rgba(255, 255, 255, 0.600);
     font-size: .8rem;
+    font-style: italic;
 }
 header input:focus {
-    outline: 2px solid white;
+    outline: 2px solid var(--cor-pricipal);
 }
 
 .box-search{
     position: relative;
     cursor: pointer;
+    border: 2px solid white;
+    border-radius: 21px;
 }
 .bx-search {
     position: absolute;
