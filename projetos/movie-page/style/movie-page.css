@@ -38,7 +38,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    transition: top .5s;
+    transition: .5s;
     height: 70px;
     z-index: 2;
     background-color: transparent;
@@ -70,14 +70,20 @@ header input {
     padding: 7px 00 7px 10px;
     border-radius: 20px;
     border-right: 35px solid transparent;
-    box-shadow: 0 0 10px rgb(0, 0, 0)
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    cursor: pointer;
 }
 header input::placeholder {
-    color: rgba(255, 255, 255, 0.452);
+    color: rgba(255, 255, 255, 0.623);
     font-size: .8rem;
 }
+header input:focus {
+    outline: 2px solid white;
+}
+
 .box-search{
     position: relative;
+    cursor: pointer;
 }
 .bx-search {
     position: absolute;
@@ -86,6 +92,11 @@ header input::placeholder {
     transform: translate(-50%, -50%);
     font-size: 1.2rem;
     color: white;
+    transition: .3s;
+}
+.bx-search:hover {
+    font-size: 1.23rem;
+    text-shadow: black;
 }
 
 header > a {
@@ -98,7 +109,7 @@ header > a {
     color: var(--cor-principal);
 }
 header > a:hover {
-    background-color: rgb(133, 100, 250);;
+    background-color: rgb(133, 100, 250);
     color: white;
 }
 
