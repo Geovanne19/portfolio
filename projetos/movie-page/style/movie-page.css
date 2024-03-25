@@ -83,12 +83,16 @@ header input {
     cursor: pointer;
 }
 header input::placeholder {
-    color: rgba(255, 255, 255, 0.600);
+    color: rgb(255, 255, 255);
     font-size: .8rem;
     font-style: italic;
 }
 header input:focus {
     outline: 2px solid var(--cor-pricipal);
+}
+
+header input:focus::placeholder{
+    color: #ffffffad;
 }
 
 .box-search{
