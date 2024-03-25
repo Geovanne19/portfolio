@@ -346,9 +346,29 @@ header > a:hover {
     }
 }
 
+.carrossel.next .thumbnail .item:nth-last-child(1) {
+    width: 0;
+    overflow: hidden;
+    animation: mostrarThumbnail .5s linear 1 forwards;
+}
+@keyframes Thumbnail {
+    to {
+        width: 150px;
+    }
+}
+
+.carrossel.next .thumbnail {
+    transform: translateX(150px);
+    animation: transformThumbnail .5s linear forwards;
+}
+@keyframes transformThumbnail {
+    to {
+        transform: translateX(0);
+    }
+}
+
 .section-2 {
     height: 100vh;
     background-color: var(--cor-background);
 }
 
-/* heidchuewod */
