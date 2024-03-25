@@ -226,6 +226,35 @@ header > a:hover {
     border: 1px solid #eee;
 }
 
+.thumbnail {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    width: max-content;
+    z-index: 100;
+    display: flex;
+    gap: 20px;
+}
+
+.thumbnail .item {
+    width: 150px;
+    height: 220px;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.thumbnail .item .conteudo {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+}
+
+.thumbnail .item .conteudo .titulo {
+    font-weight: bold;
+    
+}
+
 .section-2 {
     height: 100vh;
     background-color: var(--cor-background);
