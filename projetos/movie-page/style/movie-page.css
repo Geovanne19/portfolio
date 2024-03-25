@@ -160,6 +160,57 @@ header > a:hover {
     top: 0;
 }
 
+/* Carrossel */
+
+.carrossel {
+    width: 100vw;
+    height: 100vw;
+    overflow: hidden;
+    position: relative;
+}
+
+.carrossel .lista .item {
+    position: absolute;
+    inset: 0 0 0 0;
+}
+
+.carrossel .lista .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carrossel .lista .item .conteudo {
+    position: absolute;
+    top: 20%;
+    width: 1140px;
+    max-width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-right: 30%;
+    color: white;
+    text-shadow: 0 5px 10px #0004;
+}
+
+.carrossel .lista .item .conteudo .autor{
+    font-weight: bold;
+    letter-spacing: 10px;
+}
+
+.carrossel .lista .item .conteudo .titulo,
+.carrossel .lista .item .conteudo .topico {
+    font-weight: bold;
+    font-size: 5rem;
+    line-height: 1.3rem;
+}
+
+.carrossel .lista .item .conteudo .buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 130px);
+    grid-template-rows: 40px;
+    gap: 5px;
+    margin-top: 20px;
+}
 
 .section-2 {
     height: 100vh;
