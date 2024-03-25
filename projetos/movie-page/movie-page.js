@@ -1,6 +1,6 @@
 let lastScrollTop = 0;
 
-window.addEventListener("scroll", function() {
+window.addEventlistaener("scroll", function() {
     let currentScroll = window.scrollY || document.documentElement.scrollTop;
     
     if (currentScroll > lastScrollTop) {
@@ -18,3 +18,53 @@ window.addEventListener("scroll", function() {
         document.getElementById("header").style.background = "transparent";
     }
 }, false);
+
+//step 1: get DOM
+let nextDom = document.getElementById('next');
+let prevDom = document.getElementById('prev');
+
+let carrosselDom = document.querySelector('.carrossel');
+let SliderDom = carrosselDom.querySelector('.carrossel .lista');
+let thumbnailBorderDom = document.querySelector('.carrossel .thumbnail');
+let thumbnailItemsDom = thumbnailBorderDom.querySelectorAll('.item');
+let timeDom = document.querySelector('.carrossel .time');
+
+thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
+let timeRunning = 3000;
+let timeAutoNext = 7000;
+
+nextDom.onclick = function () {
+    showSlider('next');
+}
+
+prevDom.onclick = function () {
+    showSlider('prev');
+}
+let runTimeOut;
+let runNextAuto = setTimeout(() => {
+    next.click();
+}, timeAutoNext)
+function showSlider(tipo) {
+    let SliderItemsDom = SliderDom.querySelectorAll('.carrossel .lista .item');
+    let thumbnailItemsDom = document.querySelectorAll('.carrossel .thumbnail .item');
+
+    if (tipo === 'next') {
+        SliderDom.appendChild(SliderItemsDom[0]);
+        thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
+        carrosselDom.classlista.add('next');
+    } else {
+        SliderDom.prepend(SliderItemsDom[SliderItemsDom.length - 1]);
+        thumbnailBorderDom.prepend(thumbnailItemsDom[thumbnailItemsDom.length - 1]);
+        carrosselDom.classlista.add('prev');
+    }
+    clearTimeout(runTimeOut);
+    runTimeOut = setTimeout(() => {
+        carrosselDom.classlista.remove('next');
+        carrosselDom.classlista.remove('prev');
+    }, timeRunning);
+
+    clearTimeout(runNextAuto);
+    runNextAuto = setTimeout(() => {
+        next.click();
+    }, timeAutoNext)
+}
