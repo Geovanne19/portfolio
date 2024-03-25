@@ -283,6 +283,7 @@ header > a:hover {
     font-weight: bolder;
     font-size: large;
     transition: .5s;
+    z-index: 100;
 }
 .arrows button:hover {
     background-color: #eee;
@@ -322,10 +323,28 @@ header > a:hover {
     animation-delay: 1.6s;
 }
 
-.carrossel .lista .irem:nth-child(1) .buttons {
+.carrossel .lista .item:nth-child(1) .buttons {
     animation-delay: 1.8s;
 }
 
+.carrossel.lista .item:nth-child(1) img {
+    width: 150px;
+    height: 220px;
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    border-radius: 20px;
+    animation: mostarImagem .5s linear 1 forwards;
+}
+@keyframes mostrarImagem {
+    to {
+        width: 100%;
+        height: 100%;
+        left: 0;
+        bottom: 0;
+        border-radius: 0;
+    }
+}
 
 .section-2 {
     height: 100vh;
