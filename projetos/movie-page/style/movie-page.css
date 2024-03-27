@@ -136,7 +136,6 @@ header>a:hover {
     color: white;
 }
 
-/* carrossel */
 .carrossel {
     height: 100vh;
     width: 100vw;
@@ -208,7 +207,6 @@ header>a:hover {
     color: #eee;
 }
 
-/* thumbail */
 .thumbnail {
     position: absolute;
     bottom: 50px;
@@ -231,7 +229,7 @@ header>a:hover {
     height: 100%;
     object-fit: cover;
     border-radius: 20px;
-    box-shadow: 0 0 10px black;
+    /* box-shadow: 0 0 10px black; */
 }
 
 .thumbnail .item .conteudo {
@@ -250,7 +248,6 @@ header>a:hover {
     font-weight: 300;
 }
 
-/* setas */
 .setas {
     position: absolute;
     top: 80%;
@@ -280,12 +277,9 @@ header>a:hover {
     color: #000;
 }
 
-/* animation */
 .carrossel .lista .item:nth-child(1) {
     z-index: 1;
 }
-
-/* animation text in first item */
 
 .carrossel .lista .item:nth-child(1) .conteudo .autor,
 .carrossel .lista .item:nth-child(1) .conteudo .titulo,
