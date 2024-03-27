@@ -230,6 +230,7 @@ header>a:hover {
     object-fit: cover;
     border-radius: 20px;
     /* box-shadow: 0 0 10px black; */
+    cursor: pointer;
 }
 
 .thumbnail .item .conteudo {

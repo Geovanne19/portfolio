@@ -67,3 +67,7 @@ window.addEventListener("scroll", function () {
         document.getElementById("header").style.background = "transparent";
     }
 }, false);
+
+function Alerta () {
+    alert('Botão Ilustrativo')
+}
