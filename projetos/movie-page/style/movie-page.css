@@ -175,7 +175,7 @@ header>a:hover {
     letter-spacing: 10px;
 }
 
-.carrossel .lista .item .title,
+.carrossel .lista .item .titulo,
 .carrossel .lista .item .topico {
     font-size: 5em;
     font-weight: bold;
@@ -241,7 +241,7 @@ header>a:hover {
     right: 10px;
 }
 
-.thumbnail .item .conteudo .title {
+.thumbnail .item .conteudo .titulo {
     font-weight: 500;
 }
 
@@ -287,7 +287,7 @@ header>a:hover {
 /* animation text in first item */
 
 .carrossel .lista .item:nth-child(1) .conteudo .autor,
-.carrossel .lista .item:nth-child(1) .conteudo .title,
+.carrossel .lista .item:nth-child(1) .conteudo .titulo,
 .carrossel .lista .item:nth-child(1) .conteudo .topico,
 .carrossel .lista .item:nth-child(1) .conteudo .des,
 .carrossel .lista .item:nth-child(1) .conteudo .buttons {
@@ -305,7 +305,7 @@ header>a:hover {
     }
 }
 
-.carrossel .lista .item:nth-child(1) .conteudo .title {
+.carrossel .lista .item:nth-child(1) .conteudo .titulo {
     animation-delay: 1.2s;
 }
 
@@ -431,7 +431,7 @@ header>a:hover {
 }
 
 .carrossel.prev .lista .item:nth-child(2) .conteudo .autor,
-.carrossel.prev .lista .item:nth-child(2) .conteudo .title,
+.carrossel.prev .lista .item:nth-child(2) .conteudo .titulo,
 .carrossel.prev .lista .item:nth-child(2) .conteudo .topico,
 .carrossel.prev .lista .item:nth-child(2) .conteudo .des,
 .carrossel.prev .lista .item:nth-child(2) .conteudo .buttons {
@@ -451,7 +451,7 @@ header>a:hover {
         padding-right: 0;
     }
 
-    .carrossel .lista .item .conteudo .title {
+    .carrossel .lista .item .conteudo .titulo {
         font-size: 30px;
     }
 }
