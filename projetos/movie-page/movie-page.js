@@ -4,47 +4,47 @@ let prevDom = document.getElementById('prev');
 let carrosselDom = document.querySelector('.carrossel');
 let SliderDom = carrosselDom.querySelector('.carrossel .lista');
 let thumbnailBorderDom = document.querySelector('.carrossel .thumbnail');
-let thumbnailItensDom = thumbnailBorderDom.querySelectorAll('.item');
-let tempoDom = document.querySelector('.carrossel .tempo');
+let thumbnailItemsDom = thumbnailBorderDom.querySelectorAll('.item');
+let timeDom = document.querySelector('.carrossel .time');
 
-thumbnailBorderDom.appendChild(thumbnailItensDom[0]);
-let tempoRodando = 3000;
-let tempoAutoNext = 7000;
+thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
+let timeRunning = 3000;
+let timeAutoNext = 7000;
 
 nextDom.onclick = function () {
-    mostrarSlider('next');
+    showSlider('next');
 }
 
 prevDom.onclick = function () {
-    mostrarSlider('prev');
+    showSlider('prev');
 }
-let esgotarTempo;
-let rodarNextAuto = settempoout(() => {
+let runTimeOut;
+let runNextAuto = setTimeout(() => {
     next.click();
-}, tempoAutoNext)
-function mostrarSlider(type) {
-    let SliderItensDom = SliderDom.querySelectorAll('.carrossel .lista .item');
-    let thumbnailItensDom = document.querySelectorAll('.carrossel .thumbnail .item');
+}, timeAutoNext)
+function showSlider(type) {
+    let SliderItemsDom = SliderDom.querySelectorAll('.carrossel .lista .item');
+    let thumbnailItemsDom = document.querySelectorAll('.carrossel .thumbnail .item');
 
     if (type === 'next') {
-        SliderDom.appendChild(SliderItensDom[0]);
-        thumbnailBorderDom.appendChild(thumbnailItensDom[0]);
-        carrosselDom.classlista.add('next');
+        SliderDom.appendChild(SliderItemsDom[0]);
+        thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
+        carrosselDom.classList.add('next');
     } else {
-        SliderDom.prepend(SliderItensDom[SliderItensDom.length - 1]);
-        thumbnailBorderDom.prepend(thumbnailItensDom[thumbnailItensDom.length - 1]);
-        carrosselDom.classlista.add('prev');
+        SliderDom.prepend(SliderItemsDom[SliderItemsDom.length - 1]);
+        thumbnailBorderDom.prepend(thumbnailItemsDom[thumbnailItemsDom.length - 1]);
+        carrosselDom.classList.add('prev');
     }
-    limpartempo(esgotarTempo);
-    esgotarTempo = settempoout(() => {
-        carrosselDom.classlista.remove('next');
-        carrosselDom.classlista.remove('prev');
-    }, tempoRodando);
+    clearTimeout(runTimeOut);
+    runTimeOut = setTimeout(() => {
+        carrosselDom.classList.remove('next');
+        carrosselDom.classList.remove('prev');
+    }, timeRunning);
 
-    limpartempo(rodarNextAuto);
-    rodarNextAuto = settempoout(() => {
+    clearTimeout(runNextAuto);
+    runNextAuto = setTimeout(() => {
         next.click();
-    }, tempoAutoNext)
+    }, timeAutoNext)
 }
 
 //step 1: get DOM

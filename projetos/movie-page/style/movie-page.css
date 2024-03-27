@@ -306,7 +306,7 @@ header>a:hover {
 }
 
 .carrossel .lista .item:nth-child(1) .conteudo .title {
-    animation-delay: 1.2s !important;
+    animation-delay: 1.2s;
 }
 
 .carrossel .lista .item:nth-child(1) .conteudo .topico {
