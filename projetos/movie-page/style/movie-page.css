@@ -8,6 +8,25 @@
     --cor-pricipal-clara: #33d1a4;
 }
 
+.alerta {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.651);
+    color: rgb(31, 31, 31);
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    text-shadow: 0 1px 10px black; 
+    font-weight: 600;
+    display: none;
+    transition: .7s;
+}
+.alerta.ativo {
+    display: block;
+}
+
 body {
     margin: 0;
     background-color: #000;
@@ -51,7 +70,7 @@ header {
     width: 100%;
     transition: .5s;
     height: 70px;
-    z-index: 2;
+    z-index: 10;
     background-color: transparent;
 }
 
@@ -213,7 +232,7 @@ header>a:hover {
     bottom: 50px;
     left: 50%;
     width: max-content;
-    z-index: 100;
+    z-index: 1;
     display: flex;
     gap: 20px;
 }
@@ -254,7 +273,7 @@ header>a:hover {
     position: absolute;
     top: 80%;
     right: 52%;
-    z-index: 100;
+    z-index: 1;
     width: 300px;
     max-width: 30%;
     display: flex;
@@ -438,4 +457,11 @@ header>a:hover {
     height: 70px;
     background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
     z-index: 4;
+}
+
+.pagina-1 {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background-color: var(--cor-background);
 }

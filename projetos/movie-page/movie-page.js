@@ -69,5 +69,6 @@ window.addEventListener("scroll", function () {
 }, false);
 
 function Alerta () {
-    alert('Botão Ilustrativo')
+    let alerta = document.querySelector('.alerta');
+    alerta.classList.toggle.('ativo') ;
 }
