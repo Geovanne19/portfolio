@@ -199,6 +199,7 @@ header>a:hover {
     letter-spacing: 3px;
     font-family: var(--fonte-principal);
     font-weight: 500;
+    cursor: pointer;
 }
 
 .carrossel .lista .item .buttons button:nth-child(2) {
