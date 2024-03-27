@@ -70,5 +70,5 @@ window.addEventListener("scroll", function () {
 
 function Alerta () {
     let alerta = document.querySelector('.alerta');
-    alerta.classList.toggle.('ativo') ;
+    alerta.classList.add('ativo');
 }
