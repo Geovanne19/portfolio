@@ -1,56 +1,56 @@
 let nextDom = document.getElementById('next');
 let prevDom = document.getElementById('prev');
 
-let carouselDom = document.querySelector('.carousel');
-let SliderDom = carouselDom.querySelector('.carousel .list');
-let thumbnailBorderDom = document.querySelector('.carousel .thumbnail');
-let thumbnailItemsDom = thumbnailBorderDom.querySelectorAll('.item');
-let timeDom = document.querySelector('.carousel .time');
+let carrosselDom = document.querySelector('.carrossel');
+let SliderDom = carrosselDom.querySelector('.carrossel .lista');
+let thumbnailBorderDom = document.querySelector('.carrossel .thumbnail');
+let thumbnailItensDom = thumbnailBorderDom.querySelectorAll('.item');
+let tempoDom = document.querySelector('.carrossel .tempo');
 
-thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
-let timeRunning = 3000;
-let timeAutoNext = 7000;
+thumbnailBorderDom.appendChild(thumbnailItensDom[0]);
+let tempoRodando = 3000;
+let tempoAutoNext = 7000;
 
 nextDom.onclick = function () {
-    showSlider('next');
+    mostrarSlider('next');
 }
 
 prevDom.onclick = function () {
-    showSlider('prev');
+    mostrarSlider('prev');
 }
-let runTimeOut;
-let runNextAuto = setTimeout(() => {
+let esgotarTempo;
+let rodarNextAuto = settempoout(() => {
     next.click();
-}, timeAutoNext)
-function showSlider(type) {
-    let SliderItemsDom = SliderDom.querySelectorAll('.carousel .list .item');
-    let thumbnailItemsDom = document.querySelectorAll('.carousel .thumbnail .item');
+}, tempoAutoNext)
+function mostrarSlider(type) {
+    let SliderItensDom = SliderDom.querySelectorAll('.carrossel .lista .item');
+    let thumbnailItensDom = document.querySelectorAll('.carrossel .thumbnail .item');
 
     if (type === 'next') {
-        SliderDom.appendChild(SliderItemsDom[0]);
-        thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
-        carouselDom.classList.add('next');
+        SliderDom.appendChild(SliderItensDom[0]);
+        thumbnailBorderDom.appendChild(thumbnailItensDom[0]);
+        carrosselDom.classlista.add('next');
     } else {
-        SliderDom.prepend(SliderItemsDom[SliderItemsDom.length - 1]);
-        thumbnailBorderDom.prepend(thumbnailItemsDom[thumbnailItemsDom.length - 1]);
-        carouselDom.classList.add('prev');
+        SliderDom.prepend(SliderItensDom[SliderItensDom.length - 1]);
+        thumbnailBorderDom.prepend(thumbnailItensDom[thumbnailItensDom.length - 1]);
+        carrosselDom.classlista.add('prev');
     }
-    clearTimeout(runTimeOut);
-    runTimeOut = setTimeout(() => {
-        carouselDom.classList.remove('next');
-        carouselDom.classList.remove('prev');
-    }, timeRunning);
+    limpartempo(esgotarTempo);
+    esgotarTempo = settempoout(() => {
+        carrosselDom.classlista.remove('next');
+        carrosselDom.classlista.remove('prev');
+    }, tempoRodando);
 
-    clearTimeout(runNextAuto);
-    runNextAuto = setTimeout(() => {
+    limpartempo(rodarNextAuto);
+    rodarNextAuto = settempoout(() => {
         next.click();
-    }, timeAutoNext)
+    }, tempoAutoNext)
 }
 
 //step 1: get DOM
 let lastScrollTop = 0;
 
-window.addEventlistaener("scroll", function () {
+window.addEventlistaaener("scroll", function () {
     let currentScroll = window.scrollY || document.documentElement.scrollTop;
 
     if (currentScroll > lastScrollTop) {
