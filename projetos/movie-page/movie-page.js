@@ -50,7 +50,7 @@ function showSlider(type) {
 //step 1: get DOM
 let lastScrollTop = 0;
 
-window.addEventlistaaener("scroll", function () {
+window.addEventListener("scroll", function () {
     let currentScroll = window.scrollY || document.documentElement.scrollTop;
 
     if (currentScroll > lastScrollTop) {
