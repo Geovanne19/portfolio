@@ -72,6 +72,7 @@ header {
     height: 70px;
     z-index: 10;
     background-color: transparent;
+    overflow: hidden;
 }
 
 header ul {
@@ -432,16 +433,6 @@ header>a:hover {
     }
 }
 
-@media screen and (max-width: 678px) {
-    .carrossel .lista .item .conteudo {
-        padding-right: 0;
-    }
-
-    .carrossel .lista .item .conteudo .titulo {
-        font-size: 30px;
-    }
-}
-
 .sombra-1 {
     position: absolute;
     top: 0;
@@ -460,8 +451,9 @@ header>a:hover {
 }
 
 .pagina-1 {
-    height: 100vh;
+    height: 500vh;
     width: 100%;
     display: flex;
     background-color: var(--cor-background);
 }
+
