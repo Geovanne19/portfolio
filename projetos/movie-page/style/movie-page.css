@@ -198,7 +198,7 @@ header>a:hover {
     border: none;
     background-color: #eee;
     letter-spacing: 3px;
-    font-family: Poppins;
+    font-family: var(--fonte-principal);
     font-weight: 500;
 }
 
@@ -213,7 +213,7 @@ header>a:hover {
     position: absolute;
     bottom: 50px;
     left: 50%;
-    width: max-conteudo;
+    width: max-content;
     z-index: 100;
     display: flex;
     gap: 20px;
@@ -231,6 +231,7 @@ header>a:hover {
     height: 100%;
     object-fit: cover;
     border-radius: 20px;
+    box-shadow: 0 0 10px black;
 }
 
 .thumbnail .item .conteudo {
