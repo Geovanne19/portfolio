@@ -369,31 +369,6 @@ header>a:hover {
     }
 }
 
-.carrossel .tempo {
-    position: absolute;
-    z-index: 1000;
-    width: 0%;
-    height: 3px;
-    background-color: #f1683a;
-    left: 0;
-    top: 0;
-}
-
-.carrossel.next .tempo,
-.carrossel.prev .tempo {
-    animation: tempoRodando 3s linear 1 forwards;
-}
-
-@keyframes tempoRodando {
-    from {
-        width: 100%
-    }
-
-    to {
-        width: 0
-    }
-}
-
 .carrossel.prev .lista .item:nth-child(2) {
     z-index: 2;
 }

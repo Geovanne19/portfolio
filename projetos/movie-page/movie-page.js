@@ -5,7 +5,6 @@ let carrosselDom = document.querySelector('.carrossel');
 let SliderDom = carrosselDom.querySelector('.carrossel .lista');
 let thumbnailBorderDom = document.querySelector('.carrossel .thumbnail');
 let thumbnailItemsDom = thumbnailBorderDom.querySelectorAll('.item');
-let timeDom = document.querySelector('.carrossel .time');
 
 thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
 let timeRunning = 3000;
