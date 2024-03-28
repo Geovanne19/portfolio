@@ -190,13 +190,13 @@ header>a:hover {
 }
 
 .carrossel .lista .item .titulo,
-.carrossel .lista .item .topicoo {
+.carrossel .lista .item .topico {
     font-size: 5em;
     font-weight: bold;
     line-height: 1.3em;
 }
 
-.carrossel .lista .item .topicoo {
+.carrossel .lista .item .topico {
     color: #f1683a;
 }
 
@@ -300,7 +300,7 @@ header>a:hover {
 
 .carrossel .lista .item:nth-child(1) .conteudo .autor,
 .carrossel .lista .item:nth-child(1) .conteudo .titulo,
-.carrossel .lista .item:nth-child(1) .conteudo .topicoo,
+.carrossel .lista .item:nth-child(1) .conteudo .topico,
 .carrossel .lista .item:nth-child(1) .conteudo .des,
 .carrossel .lista .item:nth-child(1) .conteudo .buttons {
     transform: translateY(50px);
@@ -321,7 +321,7 @@ header>a:hover {
     animation-delay: 1.2s !important;
 }
 
-.carrossel .lista .item:nth-child(1) .conteudo .topicoo {
+.carrossel .lista .item:nth-child(1) .conteudo .topico {
     animation-delay: 1.4s !important;
 }
 
@@ -414,7 +414,7 @@ header>a:hover {
 
 .carrossel.prev .lista .item:nth-child(2) .conteudo .autor,
 .carrossel.prev .lista .item:nth-child(2) .conteudo .titulo,
-.carrossel.prev .lista .item:nth-child(2) .conteudo .topicoo,
+.carrossel.prev .lista .item:nth-child(2) .conteudo .topico,
 .carrossel.prev .lista .item:nth-child(2) .conteudo .des,
 .carrossel.prev .lista .item:nth-child(2) .conteudo .buttons {
     animation: conteudoSai 1.5s linear 1 forwards !important;
