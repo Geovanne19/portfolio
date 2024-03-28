@@ -49,10 +49,6 @@ body {
     border-radius: 4px;
 }
 
-html {
-    font-size: 95%;
-    overflow-x: hidden;
-}
 
 h1 {
     color: var(--cor-texto);
@@ -457,3 +453,12 @@ header>a:hover {
     background-color: var(--cor-background);
 }
 
+@media screen and (max-width: 678px) {
+    .carrossel .lista .item .conteudo {
+        padding-right: 0;
+    }
+
+    .carrossel .lista .item .conteudo .titulo {
+        font-size: 30px;
+    }
+}
