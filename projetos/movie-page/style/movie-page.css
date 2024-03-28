@@ -58,7 +58,7 @@ h1 {
 header {
     display: flex;
     align-items: center;
-    justify-conteudo: space-around;
+    justify-content: space-around;
     position: fixed;
     top: 0;
     left: 0;
@@ -73,7 +73,7 @@ header {
 header ul {
     display: flex;
     gap: 10px;
-    lista-style: none;
+    list-style: none;
     width: 230px;
 }
 
@@ -158,20 +158,20 @@ header>a:hover {
     position: relative;
 }
 
-.carrossel .listaa .item {
+.carrossel .lista .item {
     width: 100%;
     height: 100%;
     position: absolute;
     inset: 0 0 0 0;
 }
 
-.carrossel .listaa .item img {
+.carrossel .lista .item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.carrossel .listaa .item .conteudo {
+.carrossel .lista .item .conteudo {
     position: absolute;
     top: 20%;
     width: 1140px;
@@ -184,23 +184,23 @@ header>a:hover {
     text-shadow: 0 5px 10px #0004;
 }
 
-.carrossel .listaa .item .autor {
+.carrossel .lista .item .autor {
     font-weight: bold;
     letter-spacing: 10px;
 }
 
-.carrossel .listaa .item .titulo,
-.carrossel .listaa .item .topicoo {
+.carrossel .lista .item .titulo,
+.carrossel .lista .item .topicoo {
     font-size: 5em;
     font-weight: bold;
     line-height: 1.3em;
 }
 
-.carrossel .listaa .item .topicoo {
+.carrossel .lista .item .topicoo {
     color: #f1683a;
 }
 
-.carrossel .listaa .item .buttons {
+.carrossel .lista .item .buttons {
     display: grid;
     grid-template-columns: repeat(2, 130px);
     grid-template-rows: 40px;
@@ -208,7 +208,7 @@ header>a:hover {
     margin-top: 20px;
 }
 
-.carrossel .listaa .item .buttons button {
+.carrossel .lista .item .buttons button {
     border: none;
     background-color: #eee;
     letter-spacing: 3px;
@@ -217,7 +217,7 @@ header>a:hover {
     cursor: pointer;
 }
 
-.carrossel .listaa .item .buttons button:nth-child(2) {
+.carrossel .lista .item .buttons button:nth-child(2) {
     background-color: transparent;
     border: 1px solid #fff;
     color: #eee;
@@ -294,15 +294,15 @@ header>a:hover {
     color: #000;
 }
 
-.carrossel .listaa .item:nth-child(1) {
+.carrossel .lista .item:nth-child(1) {
     z-index: 1;
 }
 
-.carrossel .listaa .item:nth-child(1) .conteudo .autor,
-.carrossel .listaa .item:nth-child(1) .conteudo .titulo,
-.carrossel .listaa .item:nth-child(1) .conteudo .topicoo,
-.carrossel .listaa .item:nth-child(1) .conteudo .des,
-.carrossel .listaa .item:nth-child(1) .conteudo .buttons {
+.carrossel .lista .item:nth-child(1) .conteudo .autor,
+.carrossel .lista .item:nth-child(1) .conteudo .titulo,
+.carrossel .lista .item:nth-child(1) .conteudo .topicoo,
+.carrossel .lista .item:nth-child(1) .conteudo .des,
+.carrossel .lista .item:nth-child(1) .conteudo .buttons {
     transform: translateY(50px);
     filter: blur(20px);
     opacity: 0;
@@ -317,24 +317,24 @@ header>a:hover {
     }
 }
 
-.carrossel .listaa .item:nth-child(1) .conteudo .titulo {
+.carrossel .lista .item:nth-child(1) .conteudo .titulo {
     animation-delay: 1.2s !important;
 }
 
-.carrossel .listaa .item:nth-child(1) .conteudo .topicoo {
+.carrossel .lista .item:nth-child(1) .conteudo .topicoo {
     animation-delay: 1.4s !important;
 }
 
-.carrossel .listaa .item:nth-child(1) .conteudo .des {
+.carrossel .lista .item:nth-child(1) .conteudo .des {
     animation-delay: 1.6s !important;
 }
 
-.carrossel .listaa .item:nth-child(1) .conteudo .buttons {
+.carrossel .lista .item:nth-child(1) .conteudo .buttons {
     animation-delay: 1.8s !important;
 }
 
 /* create animation when next click */
-.carrossel.next .listaa .item:nth-child(1) img {
+.carrossel.next .lista .item:nth-child(1) img {
     width: 150px;
     height: 220px;
     position: absolute;
@@ -359,7 +359,7 @@ header>a:hover {
     animation: mostrarThumbnail .5s linear 1 forwards;
 }
 
-.carrossel.prev .listaa .item img {
+.carrossel.prev .lista .item img {
     z-index: 100;
 }
 
@@ -380,11 +380,11 @@ header>a:hover {
     }
 }
 
-.carrossel.prev .listaa .item:nth-child(2) {
+.carrossel.prev .lista .item:nth-child(2) {
     z-index: 2;
 }
 
-.carrossel.prev .listaa .item:nth-child(2) img {
+.carrossel.prev .lista .item:nth-child(2) img {
     animation: paraFora 0.5s linear 1 forwards;
     position: absolute;
     bottom: 0;
@@ -412,11 +412,11 @@ header>a:hover {
     pointer-events: none;
 }
 
-.carrossel.prev .listaa .item:nth-child(2) .conteudo .autor,
-.carrossel.prev .listaa .item:nth-child(2) .conteudo .titulo,
-.carrossel.prev .listaa .item:nth-child(2) .conteudo .topicoo,
-.carrossel.prev .listaa .item:nth-child(2) .conteudo .des,
-.carrossel.prev .listaa .item:nth-child(2) .conteudo .buttons {
+.carrossel.prev .lista .item:nth-child(2) .conteudo .autor,
+.carrossel.prev .lista .item:nth-child(2) .conteudo .titulo,
+.carrossel.prev .lista .item:nth-child(2) .conteudo .topicoo,
+.carrossel.prev .lista .item:nth-child(2) .conteudo .des,
+.carrossel.prev .lista .item:nth-child(2) .conteudo .buttons {
     animation: conteudoSai 1.5s linear 1 forwards !important;
 }
 
