@@ -49,7 +49,6 @@ body {
     border-radius: 4px;
 }
 
-
 h1 {
     color: var(--cor-texto);
     font-size: 2rem;
@@ -59,23 +58,22 @@ h1 {
 header {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-conteudo: space-around;
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     transition: .5s;
     height: 70px;
     z-index: 10;
     background-color: transparent;
     overflow: hidden;
-    margin: auto;
-    max-width: 80%;
 }
 
 header ul {
     display: flex;
     gap: 10px;
-    list-style: none;
+    lista-style: none;
     width: 230px;
 }
 
@@ -160,20 +158,20 @@ header>a:hover {
     position: relative;
 }
 
-.carrossel .lista .item {
+.carrossel .listaa .item {
     width: 100%;
     height: 100%;
     position: absolute;
     inset: 0 0 0 0;
 }
 
-.carrossel .lista .item img {
+.carrossel .listaa .item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.carrossel .lista .item .conteudo {
+.carrossel .listaa .item .conteudo {
     position: absolute;
     top: 20%;
     width: 1140px;
@@ -186,23 +184,23 @@ header>a:hover {
     text-shadow: 0 5px 10px #0004;
 }
 
-.carrossel .lista .item .autor {
+.carrossel .listaa .item .autor {
     font-weight: bold;
     letter-spacing: 10px;
 }
 
-.carrossel .lista .item .titulo,
-.carrossel .lista .item .topico {
+.carrossel .listaa .item .titulo,
+.carrossel .listaa .item .topicoo {
     font-size: 5em;
     font-weight: bold;
     line-height: 1.3em;
 }
 
-.carrossel .lista .item .topico {
+.carrossel .listaa .item .topicoo {
     color: #f1683a;
 }
 
-.carrossel .lista .item .buttons {
+.carrossel .listaa .item .buttons {
     display: grid;
     grid-template-columns: repeat(2, 130px);
     grid-template-rows: 40px;
@@ -210,7 +208,7 @@ header>a:hover {
     margin-top: 20px;
 }
 
-.carrossel .lista .item .buttons button {
+.carrossel .listaa .item .buttons button {
     border: none;
     background-color: #eee;
     letter-spacing: 3px;
@@ -219,7 +217,7 @@ header>a:hover {
     cursor: pointer;
 }
 
-.carrossel .lista .item .buttons button:nth-child(2) {
+.carrossel .listaa .item .buttons button:nth-child(2) {
     background-color: transparent;
     border: 1px solid #fff;
     color: #eee;
@@ -229,7 +227,7 @@ header>a:hover {
     position: absolute;
     bottom: 50px;
     left: 50%;
-    width: max-content;
+    width: max-conteudo;
     z-index: 1;
     display: flex;
     gap: 20px;
@@ -296,15 +294,15 @@ header>a:hover {
     color: #000;
 }
 
-.carrossel .lista .item:nth-child(1) {
+.carrossel .listaa .item:nth-child(1) {
     z-index: 1;
 }
 
-.carrossel .lista .item:nth-child(1) .conteudo .autor,
-.carrossel .lista .item:nth-child(1) .conteudo .titulo,
-.carrossel .lista .item:nth-child(1) .conteudo .topico,
-.carrossel .lista .item:nth-child(1) .conteudo .des,
-.carrossel .lista .item:nth-child(1) .conteudo .buttons {
+.carrossel .listaa .item:nth-child(1) .conteudo .autor,
+.carrossel .listaa .item:nth-child(1) .conteudo .titulo,
+.carrossel .listaa .item:nth-child(1) .conteudo .topicoo,
+.carrossel .listaa .item:nth-child(1) .conteudo .des,
+.carrossel .listaa .item:nth-child(1) .conteudo .buttons {
     transform: translateY(50px);
     filter: blur(20px);
     opacity: 0;
@@ -319,24 +317,24 @@ header>a:hover {
     }
 }
 
-.carrossel .lista .item:nth-child(1) .conteudo .titulo {
-    animation-delay: 1.2s;
+.carrossel .listaa .item:nth-child(1) .conteudo .titulo {
+    animation-delay: 1.2s !important;
 }
 
-.carrossel .lista .item:nth-child(1) .conteudo .topico {
+.carrossel .listaa .item:nth-child(1) .conteudo .topicoo {
     animation-delay: 1.4s !important;
 }
 
-.carrossel .lista .item:nth-child(1) .conteudo .des {
+.carrossel .listaa .item:nth-child(1) .conteudo .des {
     animation-delay: 1.6s !important;
 }
 
-.carrossel .lista .item:nth-child(1) .conteudo .buttons {
+.carrossel .listaa .item:nth-child(1) .conteudo .buttons {
     animation-delay: 1.8s !important;
 }
 
 /* create animation when next click */
-.carrossel.next .lista .item:nth-child(1) img {
+.carrossel.next .listaa .item:nth-child(1) img {
     width: 150px;
     height: 220px;
     position: absolute;
@@ -361,7 +359,7 @@ header>a:hover {
     animation: mostrarThumbnail .5s linear 1 forwards;
 }
 
-.carrossel.prev .lista .item img {
+.carrossel.prev .listaa .item img {
     z-index: 100;
 }
 
@@ -382,11 +380,11 @@ header>a:hover {
     }
 }
 
-.carrossel.prev .lista .item:nth-child(2) {
+.carrossel.prev .listaa .item:nth-child(2) {
     z-index: 2;
 }
 
-.carrossel.prev .lista .item:nth-child(2) img {
+.carrossel.prev .listaa .item:nth-child(2) img {
     animation: paraFora 0.5s linear 1 forwards;
     position: absolute;
     bottom: 0;
@@ -414,11 +412,11 @@ header>a:hover {
     pointer-events: none;
 }
 
-.carrossel.prev .lista .item:nth-child(2) .conteudo .autor,
-.carrossel.prev .lista .item:nth-child(2) .conteudo .titulo,
-.carrossel.prev .lista .item:nth-child(2) .conteudo .topico,
-.carrossel.prev .lista .item:nth-child(2) .conteudo .des,
-.carrossel.prev .lista .item:nth-child(2) .conteudo .buttons {
+.carrossel.prev .listaa .item:nth-child(2) .conteudo .autor,
+.carrossel.prev .listaa .item:nth-child(2) .conteudo .titulo,
+.carrossel.prev .listaa .item:nth-child(2) .conteudo .topicoo,
+.carrossel.prev .listaa .item:nth-child(2) .conteudo .des,
+.carrossel.prev .listaa .item:nth-child(2) .conteudo .buttons {
     animation: conteudoSai 1.5s linear 1 forwards !important;
 }
 
@@ -459,7 +457,23 @@ header>a:hover {
         padding-right: 0;
     }
 
-    .carrossel .lista .item .conteudo .titulo {
+    .carrossel .lista .item .conteudo .titulo,
+    .carrossel .lista .item .conteudo .topico {
         font-size: 30px;
+    }
+
+    .carrossel .lista .item .buttons button {
+        font-size: .7rem;
+        height: 30px;
+        width: 110px;
+    }
+
+    .carrossel .lista .item .des {
+        font-size: .7rem;
+    }
+
+    .thumbnail .item {
+        width: 135px;
+        height: 198px;
     }
 }
