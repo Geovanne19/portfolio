@@ -467,6 +467,8 @@ header>a:hover {
     height: 220px;
     color: black;
     display: flex;
+    gap: 20px;
+    justify-content: center;
 }
 
 .slider img {
