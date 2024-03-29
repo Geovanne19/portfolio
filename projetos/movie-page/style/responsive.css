@@ -1,0 +1,25 @@
+@media screen and (max-width: 678px) {
+    .carrossel .lista .item .conteudo {
+        padding-right: 0;
+    }
+
+    .carrossel .lista .item .conteudo .titulo,
+    .carrossel .lista .item .conteudo .topico {
+        font-size: 30px;
+    }
+
+    .carrossel .lista .item .buttons button {
+        font-size: .7rem;
+        height: 30px;
+        width: 110px;
+    }
+
+    .carrossel .lista .item .des {
+        font-size: .7rem;
+    }
+
+    .thumbnail .item {
+        width: 135px;
+        height: 198px;
+    }
+}
