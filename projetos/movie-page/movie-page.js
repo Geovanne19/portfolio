@@ -73,7 +73,8 @@ function Alerta () {
     alerta.classList.add('ativo');
 }
 
-const img = document.getElementById('img')
+const imgs = document.getElementById('slider')
+const img = document.querySelectorAll('#img img')
 
 function carrossel() {
     idx++
@@ -81,7 +82,7 @@ function carrossel() {
         idx = 0
     }
 
-    imgs.styke.transform = 'translateX(${-idx * 500}px)'
+    imgs.style.transform = 'translateX(${-idx * 500}px)'
 }
 
-setInterval(carrossel)
+setInterval(carrossel, 1800)
