@@ -77,5 +77,11 @@ const img = document.getElementById('img')
 
 function carrossel() {
     idx++
-    if
+    if(idx > img.length - 1) {
+        idx = 0
+    }
+
+    imgs.styke.transform = 'translateX(${-idx * 500}px)'
 }
+
+setInterval(carrossel)
