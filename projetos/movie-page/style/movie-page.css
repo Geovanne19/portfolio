@@ -8,6 +8,12 @@
     --cor-pricipal-clara: #33d1a4;
 }
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 .alerta {
     padding: 15px;
     border-radius: 10px;
