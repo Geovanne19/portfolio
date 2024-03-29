@@ -458,8 +458,8 @@ header>a:hover {
     display: flex;
     background-color: var(--cor-background);
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .slider {
