@@ -12,6 +12,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
 }
 
 .alerta {
@@ -39,6 +40,7 @@ body {
     color: white;
     font-family: var(--fonte-principal);
     font-size: 12px;
+    overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -455,6 +457,12 @@ header>a:hover {
     width: 100%;
     display: flex;
     background-color: var(--cor-background);
+}
+
+.slider {
+    background-color: white;
+    width: 100%;
+    height: 220px;
 }
 
 @media screen and (max-width: 678px) {
