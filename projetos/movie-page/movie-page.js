@@ -73,6 +73,8 @@ function Alerta () {
     alerta.classList.add('ativo');
 }
 
+const img = document.getElementById('img')
+
 function carrossel() {
     idx++
     if
