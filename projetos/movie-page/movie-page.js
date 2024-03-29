@@ -72,3 +72,8 @@ function Alerta () {
     let alerta = document.querySelector('.alerta');
     alerta.classList.add('ativo');
 }
+
+function carrossel() {
+    idx++
+    if
+}
