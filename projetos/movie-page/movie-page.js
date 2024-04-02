@@ -73,11 +73,14 @@ function Alerta () {
     alerta.classList.add('ativo');
 }
 
-const imgs = document.getElementById('slider')
+const imgs = document.querySelector('.slider')
 const img = document.querySelectorAll('#img img')
+
+let idx = 0
 
 function carrossel() {
     idx++
+
     if(idx > img.length - 1) {
         idx = 0
     }

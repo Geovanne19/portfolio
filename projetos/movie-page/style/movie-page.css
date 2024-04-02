@@ -40,7 +40,7 @@ body {
     color: white;
     font-family: var(--fonte-principal);
     font-size: 12px;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 ::-webkit-scrollbar {
@@ -469,6 +469,7 @@ header>a:hover {
     display: flex;
     gap: 20px;
     justify-content: center;
+    overflow: hidden;
 }
 
 .slider img {
