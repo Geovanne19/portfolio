@@ -28,7 +28,6 @@
 .sobre-container {
     background-image: linear-gradient(to top, var(--cor-de-fundo-2), var(--cor2));
     display: flex;
-    min-height: auto;
 }
 
 .sobre {
