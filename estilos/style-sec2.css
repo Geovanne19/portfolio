@@ -266,7 +266,7 @@ btn-box.btns a::before {
 .cont-contato {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     font-size: 8rem;
     gap: 1rem;
     margin: 0 15%;
@@ -323,15 +323,16 @@ btn-box.btns a::before {
     top: 0;
 }
 
-.cont-contato .el-3 .texto-elemento {
-    margin-top: 40px;
+.cont-contato .el-1 {
+    margin-right: 1.5rem;
 }
+
 .cont-contato .el-4 .texto-elemento {
-    margin-top: px;
+
     text-wrap: wrap;
 }
 
-.good-vibes {
+/* .good-vibes {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -345,8 +346,9 @@ btn-box.btns a::before {
 }
 
 .good-vibes p {
-    opacity: 60%;
+    opacity: 60%; 
 }
+*/
 
 @keyframes desloca {
     0% {
