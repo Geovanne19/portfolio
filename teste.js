@@ -47,3 +47,8 @@ function showSlider(type) {
         next.click();
     }, timeAutoNext)
 }
+
+let trilho = document.getElementById('trilho')
+trilho.addEventListener('click', () => {
+    trilho.classList.toggle('ativo')
+})

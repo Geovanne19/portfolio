@@ -67,12 +67,33 @@ header.sticky {
     transition: 1s;
 }
 
-.logo {
+.trilho {
+    width: 5rem;
+    height: 2.5rem;
+    background-color: var(--cor-de-fundo);
+    border-radius: 20px;
+    position: relative;
+    border: 2px solid var(--cor-do-texto);
+    cursor: pointer;
+}
+.indicador {
+    position: absolute;
+    background-color: var(--cor-do-texto);
+    width: 50%;
+    height: 100%;
+    border-radius: 50%;
+    transform: scale(.9);
+}
+.indicador.claro .indicador{
+    left: 2.5rem;
+}
+
+/* .logo {
     position: relative;
     font-size: 2.5rem;
     color: var(--cor-do-texto);
     font-weight: 600;
-}
+} */
 
 .navbar{
     position: relative;

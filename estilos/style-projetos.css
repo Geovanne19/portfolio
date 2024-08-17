@@ -21,6 +21,9 @@
     justify-content: center;
     padding-bottom: 2.5rem;
 }
+.cont-projetos span p{
+    text-shadow: 1px 1px 1px black;
+}
 
 .min-projeto {
     position: relative;

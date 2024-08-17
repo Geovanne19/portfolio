@@ -41,3 +41,9 @@ window.onscroll = () => {
     menuIcon.classList.remove('bx-x')
     navbar.classList.remove('ativo')
 }
+
+let trilho = document.getElementById('trilho')
+trilho.addEventListener('click', () => {
+    trilho.classList.toggle('claro')
+    alternarTema()
+})
