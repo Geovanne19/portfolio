@@ -256,6 +256,8 @@ btn-box.btns a::before {
 .contato {
     background-color: var(--cor-de-fundo);
     border-radius: 30px;
+    display: flex;
+    flex-direction: column;
     text-align: center;
 }
 /* arrumar os containers */

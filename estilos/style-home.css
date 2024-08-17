@@ -120,10 +120,11 @@ header.sticky {
 
 section {
     /* min-height: 100vh; */
-    padding: 8rem 9% 2rem;
+    padding: 5rem 9% ;
 }
 
-.container { 
+.container {
+    
     padding: 8rem 9% 2rem;
 }
 
