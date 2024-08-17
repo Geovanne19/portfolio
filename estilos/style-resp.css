@@ -32,12 +32,12 @@
     }
 
     .container {
-        min-height: 100vh;
-        padding: 7rem 9% 2rem;
+        /* min-height: 100vh; */
+        padding: 5rem 9% 2rem;
     }
 
     section {
-        padding: 10rem 4% 2rem;
+        padding: 5rem 4% 2rem;
     }
 
     .home {
@@ -170,8 +170,8 @@
 @media (max-width: 520px) {
 
     .container {
-        min-height: 100vh;
-        padding: 2.5rem 3% 1rem;
+        /* min-height: 100vh; */
+        padding: 5rem 3% 1rem;
     }
 
     html {
