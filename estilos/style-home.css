@@ -79,12 +79,12 @@ header.sticky {
 .indicador {
     position: absolute;
     background-color: var(--cor-do-texto);
-    width: 50%;
+    width: 45%;
     height: 100%;
     border-radius: 50%;
     transform: scale(.9);
 }
-.indicador.claro .indicador{
+.trilho.claro .indicador{
     left: 2.5rem;
 }
 
