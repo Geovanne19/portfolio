@@ -76,16 +76,26 @@ header.sticky {
     border: 2px solid var(--cor-do-texto);
     cursor: pointer;
 }
-.indicador {
+.trilho .indicador {
     position: absolute;
     background-color: var(--cor-do-texto);
     width: 45%;
     height: 100%;
     border-radius: 50%;
     transform: scale(.9);
+    left: 0;
+    transition: .3s;
 }
 .trilho.claro .indicador{
     left: 2.5rem;
+}
+
+.trilho:hover {
+    border-color: var(--cor1);
+}
+
+.trilho:hover .indicador {
+    background-color: var(--cor1);
 }
 
 /* .logo {
@@ -110,6 +120,7 @@ header.sticky {
     transition: 0.3s;
     animation: padding_btn_contato 1s ease forwards;
     animation-delay: 1.6s;
+    width: auto;
 }
 
 .btn-contato:hover {

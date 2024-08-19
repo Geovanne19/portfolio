@@ -159,6 +159,14 @@
         font-size: 1.3rem;
     }
 
+    @keyframes padding_btn_contato {
+        100% {
+            padding: 10px;
+            background-color: #056CF2;
+            width: auto;
+        }
+    }
+
 }
 
 @media (max-width: 543px){

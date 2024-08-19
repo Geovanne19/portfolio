@@ -225,6 +225,10 @@ btn-box.btns a::before {
 }
 
 .habilidades-column:nth-child(1) .habilidades-content>.progress:nth-child(4)>.bar span {
+    width: 30%;
+}
+
+.habilidades-column:nth-child(1) .habilidades-content>.progress:nth-child(5)>.bar span {
     width: 10%;
 }
 
@@ -293,7 +297,7 @@ btn-box.btns a::before {
     font-size: 6rem;
     position: relative;
     overflow: hidden;
-    color: var(--cor-do-texto);
+    color: var(--cor1);
 }
 
 .elemento-contato .link:hover i {
@@ -332,12 +336,12 @@ btn-box.btns a::before {
     text-wrap: wrap;
 }
 
-/* .good-vibes {
+.good-vibes {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 8.5rem;
+    margin-top: 7rem;
 }
 
 .good-vibes q {
@@ -348,7 +352,7 @@ btn-box.btns a::before {
 .good-vibes p {
     opacity: 60%; 
 }
-*/
+
 
 @keyframes desloca {
     0% {
