@@ -225,7 +225,7 @@ btn-box.btns a::before {
 }
 
 .habilidades-column:nth-child(1) .habilidades-content>.progress:nth-child(4)>.bar span {
-    width: 30%;
+    width: 60%;
 }
 
 .habilidades-column:nth-child(1) .habilidades-content>.progress:nth-child(5)>.bar span {
