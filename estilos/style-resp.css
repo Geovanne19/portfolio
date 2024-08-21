@@ -169,6 +169,14 @@
 
 }
 
+@media (max-width: 621px) {
+
+    .cont-projetos .min-projeto {
+        width: 80%;
+        height: 45vw;
+    }
+}
+
 @media (max-width: 543px){
     .footer-text {
         font-size: 1.2rem;

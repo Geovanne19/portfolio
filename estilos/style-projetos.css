@@ -39,6 +39,9 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    color: white;
+    font-size: 2rem;
+    text-shadow: black 0px 0px 3px 4px;
 }
 
 .blur {
@@ -53,12 +56,6 @@
 
 .min-projeto:hover {
     background-size: 130%;
-}
-
-.min-projeto {
-    color: white;
-    font-size: 2rem;
-    text-shadow: black 0px 0px 3px 4px;
 }
 
 .escuro {
