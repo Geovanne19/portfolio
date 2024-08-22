@@ -1,1 +1,25 @@
+html, body {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-color: aqua;
+}
 
+.deFora {
+    background-color: yellow;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 60px;
+}
+
+.deDentro {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    border-radius: 50px;
+}
