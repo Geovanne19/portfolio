@@ -6,8 +6,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    overflow-y: hidden;
 }
 
 * {
@@ -20,7 +18,7 @@ body {
 }
 
 main {
-    padding: 0 40px;
+    padding: 40px;
     min-width: 300px;
     width: 700px;
     display: flex;
@@ -133,6 +131,10 @@ i {
     border-radius: 50%;
     background-color: #03456e;
     padding: 5px;
+    transition: .2;
+}
+.bx-link-external:hover {
+    transform: scale(1.1);
 }
 
 span {
