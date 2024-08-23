@@ -76,6 +76,16 @@ h3 {
     font-size: 1.1rem;
 }
 
+.links a:hover,
+.links a:hover .externo {
+    background: linear-gradient(90deg, #FFD700, #FFFFFF, #FFD700);
+    background-clip: text;
+    background-size: 400% 100%;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: gradiente 10s linear infinite alternate;
+}
+
 i {
     font-size: 30px;
     color: #ffd700;
