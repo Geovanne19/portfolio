@@ -6,7 +6,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    height: 100vh;
 }
 
 * {
@@ -122,13 +122,13 @@ header .arroba {
 }
 
 i {
-    font-size: 30px;
+    font-size: 1.875rem;
     color: #ffd700;
 }
 
 .bx-link-external {
     color: #ffd700;
-    font-size: 19px;
+    font-size: 1.1875rem;
     border-radius: 50%;
     background-color: #03456e;
     padding: 5px;
@@ -139,7 +139,7 @@ i {
 }
 
 span {
-    font-size: 30px;
+    font-size: 1.875rem;
     color: #ffd700;
     max-height: 35px;
     margin-top: -10px;
