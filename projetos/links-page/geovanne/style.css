@@ -10,7 +10,6 @@ html, body {
 
 * {
     color: white;
-    padding: 0;
 }
 
 main {
@@ -52,6 +51,10 @@ h3 {
     width: 150px;
     height: 150px;
     border: 2px solid #ffd700;
+    transition: .3s linear;
+}
+.foto:hover {
+    transform: scale(1.03);
 }
 
 .links {
@@ -74,16 +77,11 @@ h3 {
     align-items: center;
     justify-content: space-between;
     font-size: 1.1rem;
+    transition: .3s linear;
 }
 
-.links a:hover,
-.links a:hover .externo {
-    background: linear-gradient(90deg, #FFD700, #FFFFFF, #FFD700);
-    background-clip: text;
-    background-size: 400% 100%;
-    -webkit-background-clip: text;
-    color: transparent;
-    animation: gradiente 10s linear infinite alternate;
+.links a:hover {
+    color: #FFD700;
 }
 
 i {
