@@ -20,8 +20,7 @@ body {
 }
 
 main {
-    padding: 20px 40px;
-    border-radius: 20px;
+    padding: 0 40px;
     min-width: 300px;
     width: 700px;
     display: flex;
