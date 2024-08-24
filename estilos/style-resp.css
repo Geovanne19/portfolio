@@ -167,6 +167,10 @@
         }
     }
 
+        .feito:hover {
+            padding-bottom: 0;
+        }
+
 }
 
 @media (max-width: 621px) {

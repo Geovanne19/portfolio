@@ -9,6 +9,23 @@ document.querySelectorAll('.feito').forEach(element => {
     element.addEventListener('click', toggleExtendedClass);
 });
 
+// // Função para adicionar a classe 'extended' quando o mouse entra no elemento
+// function addExtendedClass(event) {
+//     event.currentTarget.classList.add('extended');
+// }
+
+// // Função para remover a classe 'extended' quando o mouse sai do elemento
+// function removeExtendedClass(event) {
+//     event.currentTarget.classList.remove('extended');
+// }
+
+// // Adiciona ouvintes de evento para 'mouseover' e 'mouseout' a todos os elementos com a classe 'feito'
+// document.querySelectorAll('.feito').forEach(element => {
+//     element.addEventListener('mouseover', addExtendedClass);
+//     element.addEventListener('mouseout', removeExtendedClass);
+// });
+
+
 
 let menuIcon = document.querySelector('#menu-icon')
 let navbar = document.querySelector('.navbar')
