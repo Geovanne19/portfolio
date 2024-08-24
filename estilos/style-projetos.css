@@ -29,8 +29,8 @@
     position: relative;
     background: var(--cor-de-fundo-2) url(imagens/background001.jpg) no-repeat center center;
     background-size: 120%, cover;
-    width: 30rem;
-    height: 20rem;
+    width: 100%;
+    height: 100%;
     border: 3.5px solid var(--cor1);
     border-radius: 10px;
     cursor: pointer;
@@ -43,6 +43,7 @@
     font-size: 2rem;
     text-shadow: black 0px 0px 3px 4px;
 }
+
 .min-projeto:nth-child(1) {
     background: var(--cor-de-fundo-2) url(imagens/screenshot-links-page.png) no-repeat center center;
     background-size: cover;
@@ -63,21 +64,6 @@
     background-size: 130%;
 }
 
-.escuro {
-    background-color: rgba(0, 0, 0, 0.322);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 1s;
-}
-.escuro:hover {
-    background: transparent;
-}
-
 .min-projeto > p {
     position: absolute;
     display:inline-table;
@@ -91,13 +77,92 @@
     background: repeating-linear-gradient(-60deg, var(--cor1), var(--cor1) 10px, var(--cor2) 10px, var(--cor2) 20px);
 }
 
-.projetos {
-    z-index: 40;
-}
-
 .legenda {
     color: gray;
     opacity: 60%;
     text-align: center;
 }
 
+.dark-filter {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 50%;
+    transition: .5s;
+}
+
+.min-projeto:nth-child(1) {
+    background: var(--cor-de-fundo-2) url(imagens/screenshot-links-page.png) no-repeat center center;
+    background-size: cover;
+}
+
+.min-projeto .titulo-projeto {
+    color: white;
+    z-index: 1;
+    transition: .5s;
+}
+
+.min-projeto:hover .titulo-projeto {
+    opacity: 0;
+}
+
+.min-projeto:hover .dark-filter {
+    opacity: 0;
+}
+
+.verMais-projeto {
+    background-color: var(--cor-de-fundo);
+    width: 100%;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0 0 10px 10px;
+    height: 0;
+    transition: 1s;
+    /* position: fixed;
+    z-index: 100; */
+}
+.verMais-projeto.extended {
+    height: 40px;
+    padding: 10px;
+    border: 3px solid var(--cor1);
+    border-top: none;
+    z-index: 100;
+}
+
+.projeto {
+    transition: .6s;
+    width: 30rem;
+    height: 20rem;
+}
+.projeto:hover {
+    transform: scale(1.2);
+}
+.projeto:hover .min-projeto {
+    background-size: 130%;
+    border-bottom: none;
+    border-radius: 10px 10px 0 0;
+}
+
+.verMais-projeto p {
+    font-size: 1.4rem;
+    visibility: hidden;
+    transition: .2s;
+}
+.verMais-projeto p.visible,
+.btn-verMais.visible {
+    visibility: visible;
+}
+
+.btn-verMais {
+    border: none;
+    background-color: var(--cor1);
+    border-radius: 5px;
+    padding: 2px 4px;
+    color: var(--cor-do-texto);
+    cursor: pointer;
+    visibility: hidden;
+    transition: .2s;
+}
