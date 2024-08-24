@@ -31,8 +31,6 @@
     background-size: 120%, cover;
     width: 100%;
     height: 100%;
-    border: 3.5px solid var(--cor1);
-    border-radius: 10px;
     cursor: pointer;
     transition: 0.6s;
     display: flex;
@@ -42,13 +40,10 @@
     color: white;
     font-size: 2rem;
     text-shadow: black 0px 0px 3px 4px;
+    border-radius: 7px;
 }
 
-.min-projeto:nth-child(1) {
-    background: var(--cor-de-fundo-2) url(imagens/screenshot-links-page.png) no-repeat center center;
-    background-size: cover;
-
-}
+.min-projeto
 
 .blur {
     backdrop-filter: blur(5px);
@@ -92,11 +87,6 @@
     transition: .5s;
 }
 
-.min-projeto:nth-child(1) {
-    background: var(--cor-de-fundo-2) url(imagens/screenshot-links-page.png) no-repeat center center;
-    background-size: cover;
-}
-
 .min-projeto .titulo-projeto {
     color: white;
     z-index: 1;
@@ -112,48 +102,39 @@
 }
 
 .verMais-projeto {
-    background-color: var(--cor-de-fundo);
-    width: 100%;
-    border: none;
+    background-color: var(--cor3);
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-radius: 0 0 10px 10px;
-    height: 0;
-    transition: 1s;
-    /* position: fixed;
-    z-index: 100; */
-}
-.verMais-projeto.extended {
-    height: 40px;
     padding: 10px;
-    border: 3px solid var(--cor1);
-    border-top: none;
-    z-index: 100;
+    height: 40px;
+    width: 100%;
+    transition: 0.6s;
 }
 
 .projeto {
     transition: .6s;
     width: 30rem;
     height: 20rem;
+    border: 3.5px solid var(--cor1);
+    border-radius: 10px;
+    overflow: hidden;
 }
-.projeto:hover {
-    transform: scale(1.2);
+
+.feito:hover {
+    transform: scale(1.1);
+    padding-bottom: 40px;
 }
-.projeto:hover .min-projeto {
+
+.feito:hover .min-projeto {
     background-size: 130%;
-    border-bottom: none;
     border-radius: 10px 10px 0 0;
 }
 
-.verMais-projeto p {
+.data {
     font-size: 1.4rem;
-    visibility: hidden;
-    transition: .2s;
-}
-.verMais-projeto p.visible,
-.btn-verMais.visible {
-    visibility: visible;
+    visibility: 0;
 }
 
 .btn-verMais {
@@ -163,6 +144,5 @@
     padding: 2px 4px;
     color: var(--cor-do-texto);
     cursor: pointer;
-    visibility: hidden;
-    transition: .2s;
+    visibility: 0;
 }
