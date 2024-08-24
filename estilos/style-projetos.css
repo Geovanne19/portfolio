@@ -43,7 +43,10 @@
     border-radius: 7px;
 }
 
-.min-projeto
+.cont-projetos .projeto:nth-child(1) .min-projeto {
+    background: var(--cor-de-fundo-2) url(imagens/min-proj-1.png) no-repeat center center;
+    background-size: 150%, cover;
+}
 
 .blur {
     backdrop-filter: blur(5px);
@@ -84,13 +87,13 @@
     height: 100%;
     background-color: black;
     opacity: 50%;
-    transition: .5s;
+    transition: .6s;
 }
 
 .min-projeto .titulo-projeto {
     color: white;
     z-index: 1;
-    transition: .5s;
+    transition: .6s;
 }
 
 .min-projeto:hover .titulo-projeto {
