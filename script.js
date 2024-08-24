@@ -1,33 +1,14 @@
-// Função que adiciona ou remove as classes
-function toggleProjetoClasses(projeto) {
-    const verMaisProjeto = projeto.querySelector('.verMais-projeto');
-    const data = verMaisProjeto.querySelector('p');
-    const btnVerMais = verMaisProjeto.querySelector('.btn-verMais');
+// Função para alternar a classe 'extended' nos elementos com a classe 'feito'
+function toggleExtendedClass(event) {
+    // Adiciona ou remove a classe 'extended' do elemento clicado
+    event.currentTarget.classList.toggle('extended');
+}
 
-//     // Toggle das classes
-//     verMaisProjeto.classList.toggle('extended');
-//     data.classList.toggle('visible');
-//     btnVerMais.classList.toggle('visible');
-// }
-
-// // Seleciona todos os elementos com a classe 'projeto'
-// const projetos = document.querySelectorAll('.projeto');
-// // Adiciona os eventos de 'mouseenter', 'mouseleave' e 'click' para cada elemento
-// projetos.forEach(function (projeto) {
-//     // Para desktop: 'mouseenter' e 'mouseleave'
-//     projeto.addEventListener('mouseenter', function () {
-//         toggleProjetoClasses(projeto);
-//     });
-
-//     projeto.addEventListener('mouseleave', function () {
-//         toggleProjetoClasses(projeto);
-//     });
-
-    // Para dispositivos móveis: 'click'
-    projeto.addEventListener('click', function () {
-        toggleProjetoClasses(projeto);
-    });
+// Adiciona o ouvinte de evento de clique a todos os elementos com a classe 'feito'
+document.querySelectorAll('.feito').forEach(element => {
+    element.addEventListener('click', toggleExtendedClass);
 });
+
 
 let menuIcon = document.querySelector('#menu-icon')
 let navbar = document.querySelector('.navbar')
@@ -77,3 +58,7 @@ trilho.addEventListener('click', () => {
     trilho.classList.toggle('claro')
     alternarTema()
 })
+
+function teste() {
+    alert('ok')
+}

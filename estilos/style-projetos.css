@@ -130,6 +130,10 @@
     padding-bottom: 40px;
 }
 
+.feito.extended {
+    padding-bottom: 40px;
+}
+
 .feito:hover .min-projeto {
     background-size: 130%;
     border-radius: 10px 10px 0 0;
