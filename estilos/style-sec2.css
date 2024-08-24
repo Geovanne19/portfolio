@@ -138,7 +138,7 @@ btn-box.btns a::before {
     min-height: auto;
 }
 
-.habilidades > .habilidades-row {
+/* .habilidades > .habilidades-row {
     display: flex;
     flex-wrap: wrap;
     gap: 5rem;
@@ -251,7 +251,7 @@ btn-box.btns a::before {
 .habilidades.mostrar-animacao .animado.scroll {
     transition-delay: calc(0.3s * var--i);
     width: 0;
-}
+} */
 
 .contato-container {
     background-image: linear-gradient(to bottom, var(--cor-de-fundo), var(--cor2));
@@ -403,7 +403,6 @@ btn-box.btns a::before {
         transform: translate(-50%, -50%) rotate(360deg);
     }
 }
-
 
 
 
