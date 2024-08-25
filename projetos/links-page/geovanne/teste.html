@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Dialog</title>
+</head>
+
+<body>
+    <!-- Botão para abrir o diálogo -->
+    <button id="showDialog">Abrir Diálogo</button>
+
+    <!-- Tag dialog -->
+    <dialog id="myDialog">
+        <p>Este é um diálogo nativo HTML5!</p>
+        <button id="closeDialog">Fechar</button>
+    </dialog>
+
+    <script>
+        // Obtém os elementos
+        const dialog = document.getElementById('myDialog');
+        const showDialogButton = document.getElementById('showDialog');
+        const closeDialogButton = document.getElementById('closeDialog');
+
+        // Adiciona ouvintes de eventos para abrir e fechar o diálogo
+        showDialogButton.addEventListener('click', () => {
+            dialog.showModal(); // Abre o diálogo como modal
+        });
+
+        closeDialogButton.addEventListener('click', () => {
+            dialog.close(); // Fecha o diálogo
+        });
+    </script>
+</body>
+
+</html>
